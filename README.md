@@ -7,6 +7,10 @@ El sitio va a apuntar a un segmento de jóvenes adultos, de entre 20 a 35 años,
 ¿Cómo ajustaremos nuestra oferta a ese público?
 El sitio e-commerce de la marca Rōnin tendrá un diseño estético japonés, combinando aspectos del periodo feudal y elementos más tecnológicos. Creemos que esta elección de diseño es afín a nuestro público objetivo, además lo japonés denota buena calidad, a moderno y es estéticamente atractivo. 
 
+Breve descripción de los integrantes del equipo
+
+Matias Pagano: Amante de los deportes, de la comida, series/películas y videojuegos. Licenciado en publicidad y especialista en Marketing Estratégico. Le gusta trabajar en equipo, es introvertido, analítico y creativo. 
+
 Las siguientes páginas fueron seleccionadas como "referencias" en base a sus funcionalidades y su estética:
 https://www.seikowatches.com/global-en
 https://www.casio-intl.com/latin/es/wat/search/watch/
@@ -15,3 +19,4 @@ https://avantjoyas.com/categoria-producto/relojes/
 http://www.whitemountaineering.com/
 https://abaco.la/relojes/
 https://www.watchcity.com.ar/
+

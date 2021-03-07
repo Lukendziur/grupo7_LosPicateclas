@@ -9,7 +9,7 @@ El sitio e-commerce de la marca Rōnin tendrá un diseño estético japonés, co
 
 Breve descripción de los integrantes del equipo
 
-Matias Pagano: Amante de los deportes, de la comida, series/películas y videojuegos. Licenciado en publicidad y especialista en Marketing Estratégico. Le gusta trabajar en equipo, es introvertido, analítico y creativo. 
+Matías Pagano: Amante de los deportes, de la comida, series/películas y videojuegos. Licenciado en publicidad y especialista en Marketing Estratégico. Le gusta trabajar en equipo, es introvertido, analítico y creativo. 
 
 Las siguientes páginas fueron seleccionadas como "referencias" en base a sus funcionalidades y su estética:
 https://www.seikowatches.com/global-en

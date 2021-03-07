@@ -13,6 +13,8 @@ Matías Pagano: Amante de los deportes, de la comida, series/películas y videoj
 
 Mathias Reid: le gusta el tenis y los videojuegos, tiene 20 años vive en zelaya (en medio de la nada), es muy amistoso, obsesivo con los problemas(trata de resolverlos a mas no poder) y es muy colaborativo
 
+Julián Sandoval: Colombiano viviendo en Ciudad de Buenos Aires hace 5 años. Vine a estudiar y aquí me quedé. Mi tema de investigación son las tensiones y posibilidades de la relación entre Educación y Nuevas Tecnologías.
+
 Las siguientes páginas fueron seleccionadas como "referencias" en base a sus funcionalidades y su estética:
 https://www.seikowatches.com/global-en
 https://www.casio-intl.com/latin/es/wat/search/watch/

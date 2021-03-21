@@ -9,19 +9,19 @@ const port = 3000;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'))
+    res.sendFile(path.join(__dirname, '/views/index.html'))
 });
 
 app.get('/Carrito-compras', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/carritoCompras.html'))
+    res.sendFile(path.join(__dirname, '/views/productCart.html'))
 });
 
 app.get('/Detalle-de-producto', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/detalleProducto.html'))
+    res.sendFile(path.join(__dirname, '/views/productDetail.html'))
 });
 
 app.get('/Facturacion', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/facturacion.html'))
+    res.sendFile(path.join(__dirname, '/views/billing.html'))
 });
 
 app.get('/Login', (req, res) => {
@@ -29,7 +29,7 @@ app.get('/Login', (req, res) => {
 });
 
 app.get('/Registro', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/registro.html'))
+    res.sendFile(path.join(__dirname, '/views/register.html'))
 });
 
 app.listen(port, () => {

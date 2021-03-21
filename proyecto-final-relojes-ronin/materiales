@@ -7,4 +7,40 @@ Azul Oscuro - #0D2D3A
 Verdeazulado - #7DB9B3
 
 == Fuentes == 
-Open Sans 
+Open Sans - textos
+
+
+--Página: inicio--
+== Home del sitio con la oferta de productos y/o servicios.==
+Historias de usuario:
+★ Como cliente quiero ver un resumen de la oferta de productos para poder decidir rápidamente si quedarme o buscar el producto en otro sitio.
+★ Como cliente quiero que el sitio funcione bien en mi teléfono celular para poder acceder en cualquier momento.
+Entregable: Archivo index.html junto con todos los recursos necesarios, estilos de CSS e imágenes.
+
+--Página: detalle de producto--
+== Página a la que accede el cliente al hacer click en un producto.==
+Historias de usuario
+★ Como cliente quiero poder ver toda la información relevante del producto para decidir si voy a comprarlo.
+★ Como cliente quiero poder agregar fácilmente el producto a mi carrito para poder comprarlo.
+Entregable: Archivo productDetail.html (o similar) junto con todos los recursos necesarios, estilos de CSS e imágenes.
+
+--Página: carrito de compras--
+== Página donde el cliente puede visualizar su compra actual y proceder al pago.==
+Historias de usuario
+★ Como cliente quiero poder acceder al detalle de mi carrito de compras en cualquier momento para finalizar la compra.
+★ Como cliente quiero poder modificar productos del carrito para poder eliminarlos de la compra o modificar la cantidad.
+Entregable: Archivo productCart.html (o similar) junto con todos los recursos necesarios, estilos de CSS e imágenes.
+
+--Página: registro--
+== Página donde el cliente puede registrarse como usuario del sitio.==
+Historias de usuario
+★ Como cliente quiero poder registrarme para estar en su base de datos y acceder a mi perfil e historial de compras de una manera más sencilla y, además, facilitar el proceso de futuras compras.
+Entregable: Archivo register.html (o similar) junto con todos los recursos necesarios, estilos de CSS e imágenes.
+
+--Página: login--
+== Página donde el cliente puede ingresar con el usuario que creó previamente.==
+Historias de usuario
+★ Como cliente quiero poder loguearme para acceder a mi historial de compras.
+★ Como cliente quiero tener la opción de que el sitio me recuerde para no escribir mi usuario y contraseña cada vez.
+★ Como cliente quiero poder recuperar la contraseña para poder ingresar si me la olvido.
+Entregable: Archivo login.html (o similar) junto con todos los recursos necesarios, estilos de CSS e imágenes.

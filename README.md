@@ -28,3 +28,8 @@ http://www.whitemountaineering.com/
 https://abaco.la/relojes/
 https://www.watchcity.com.ar/
 
+### Plataforma de trabajo:
+Utilizaremos Trello como plataforma de trabajo para el proyecto "Ronin". Pueden acceder
+mediante el siguiente enlace: 
+
+https://trello.com/invite/b/08onCQNB/513e628b00786dc4f16506f44d55855f/sprint2

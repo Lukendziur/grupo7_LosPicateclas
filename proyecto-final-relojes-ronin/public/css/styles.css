@@ -46,13 +46,9 @@ header{
 .contenedorIconos{
     display: flex;
     flex-direction:row;
-    align-items: baseline;
-    
-    
-    
+    align-items: baseline;    
       
 } 
-
     .contenedorIconos i{
         margin: 0 5px;
         font-size: 22;
@@ -66,9 +62,7 @@ header{
         
         text-align: center;
         font-size: 20px;
-
     }
-
          .burger-menu i{
              color:white;
              margin: 5px;
@@ -76,8 +70,7 @@ header{
              border-radius: 5px;
              height: 35px;
              width: 35px;
-             padding: 10px;
-             
+             padding: 10px;             
         }
       
   
@@ -106,92 +99,124 @@ header{
 
 
 
+
+
+
+/*INICIO DEL <MAIN> DE LA PÁGINA HOME*/
+
+ /*-------------------------------------------------------------------------------------*/
+
+/*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE COMPRAS*/
+
+ /*-------------------------------------------------------------------------------------*/
+
+/*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE FACTURACIÓN*/
+
+ /*-------------------------------------------------------------------------------------*/
+
+/*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE LOGIN*/
+
+ /*-------------------------------------------------------------------------------------*/
+
+/*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE REGISTER*/
+
+ /*-------------------------------------------------------------------------------------*/
+
+/*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE DETALLE DEL PRODUCTO*/
+
+ /*-------------------------------------------------------------------------------------*/
+
+
+ 
+/*INICIO DE LAS MEDIA QUERIES*/    
+
 @media(min-width: 361px){
-    form.buscador input[type=text]{
-        display: none;
-        margin-right: 1px;
-        border-radius: 6px;
-        border: 1px solid lightgray;
-        background-color: #383D3D1A;
-        color: lightgray;
-        width: 70%;
-        margin-left: 30px;        
-    } 
-   
 
-    header{
-        border-bottom: 2px solid lightgray;
-    }
-
-    .fa-shopping-cart:before, .fa-user-circle:before, .fa-search:before {
-        font-size: 1.5rem;
-    }
-
-    
-
-    
-    
-    
-    
-    
-}
-
-@media(min-width: 768px){
-    header{
-        border-bottom: none;
-    }
-    
-    .burger-menu{
-        display: none;
-    }
-    .nav-bar{
-        display: flex;
-    }
-
-    form.buscador input[type=text]{
-        display: block;
-        width: 100%;       
+    /*HEADER DE LA PÁGINA HOME*/    
+        header{
+            border-bottom: 2px solid lightgray;
+        }
         
-    } 
-    
-        div.ContenedorBuscador button[type=submit]{
-         border:white solid 1px;
-         background-color: white;
-
-        } 
-
-    .contenedorIconos{
-        align-items:flex-end;
-        margin: 0 10px;
+        /*BUSCADOR QUERIE 361PX*/
+        form.buscador input[type=text]{
+            display: none;
+            margin-right: 1px;
+            border-radius: 6px;
+            border: 1px solid lightgray;
+            background-color: #383D3D1A;
+            color: lightgray;
+            width: 70%;
+            margin-left: 30px;        
+        }    
+         /*NORMALIZACIÓN DE LOS ÍCONOS*/
+        .fa-shopping-cart:before, .fa-user-circle:before, .fa-search:before {
+            font-size: 1.5rem;
+        }
+     /*FOOTER DE LA PÁGINA HOME*/ 
         
     }
     
+    @media(min-width: 768px){
     
+    /*HEADER DE LA PÁGINA HOME*/ 
     
+         /*ELEMENTOS QUE NO TIENEN QUE APARECER A PARTIR DE ESTA RESOLUCIÓN!*/
+        header{
+            border-bottom: none;
+        }    
+        .burger-menu{
+            display: none;
+        }
+        /*ELEMENTOS QUE SÍ TIENEN QUE APARECER A PARTIR DE ESTA RESOLUCIÓN!*/
+        .nav-bar{
+         display: block;
+        }
+         
+        form.buscador input[type=text]{
+         display: block;
+         width: 100%;       
+        }     
+            div.ContenedorBuscador button[type=submit]{
+             border:white solid 1px;
+             background-color: white;
+            }
+            
+            .contenedorIconos{
+             align-items:flex-end;
+             margin: 0 10px;  
+            }
+     /*MAIN DE LA PÁGINA HOME*/ 
     
-}
-@media(min-width: 1200px){
-    .topMenu img{
-        width: 150px;
+     /*FOOTER DE LA PÁGINA HOME*/    
+    }
+    
+    @media(min-width: 1200px){
         
-    }
-
-    .nav-bar{
-        display: flex;
-    }
-    .nav-bar ul li a {
-        font-size: 22px;
-        margin: 0 25px;
-    }
-    .burger-menu{
-        display: none;
-    }
-
-    .contenedorIconos i{
-        margin: 0 15px;
-        font-size: 35px;
-              
-    }
-
-}    
-
+     /*HEADER DE LA PÁGINA HOME*/    
+        /*AUMENTANDO EL TAMAÑO DEL LOGO*/
+        .topMenu img{
+            width: 150px;        
+        }
+    
+        .nav-bar{
+            display: flex;
+            
+        }    
+            .nav-bar ul li a {
+                font-size: 22px;
+                margin: 0 25px;
+            }
+    
+    
+        .contenedorIconos i{
+            margin: 0 15px;
+                        
+        }
+     
+     /*FOOTER DE LA PÁGINA HOME*/ 
+    
+    
+     /*-------------------------------------------------------------------------------------*/
+     
+     
+    }    

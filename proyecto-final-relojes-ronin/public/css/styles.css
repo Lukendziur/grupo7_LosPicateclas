@@ -5,6 +5,12 @@
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
 
+header{
+    padding: 10px;
+    margin: auto;
+    
+}
+
 .topMenu{
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +22,8 @@
 }
 
 .topMenu img{
-    width: 90px;
+    width: 100px;
+    border: green solid 2px;
 }
 
 .topMenu .buscador{
@@ -26,6 +33,16 @@
 div.ContenedorBuscador input[type=text]{
     display: none;
     width: fit-content;
+}
+div.ContenedorBuscador button[type=submit]{
+    border:white solid 1px;
+    background-color: white;
+
+} 
+
+
+.button [type="submit"]{
+    margin-left: 20px;
 }
 
 .nav-bar {
@@ -51,16 +68,26 @@ div.ContenedorBuscador input[type=text]{
 
 .contenedorIconos{
     display: flex;
-    justify-content: space-between;
     border: red 2px solid;
-    width: 50px;
+    padding: 5px;
+    
 }
+.contenedorIconos i{
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+
 
 @media(min-width: 361px){
     div.ContenedorBuscador input[type=text]{
-        display: flex;
+        display: none;
         width: fit-content;
+
     }
+    
+    
+    
 }
 
 @media(min-width: 768px){
@@ -73,9 +100,15 @@ div.ContenedorBuscador input[type=text]{
     div.ContenedorBuscador input[type=text]{
         display: flex;
         width: fit-content;
+        margin-right: 1px;
     }
-}
+    div.ContenedorBuscador button[type=submit]{
+        border:white solid 1px;
+        background-color: white;
 
+    } 
+    
+}
 @media(min-width: 1200px){
     .nav-bar{
         display: flex;

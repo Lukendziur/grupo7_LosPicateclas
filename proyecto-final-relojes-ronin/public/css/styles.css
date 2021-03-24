@@ -245,18 +245,9 @@ footer i {
             }
      
      /*FOOTER DE LA PÁGINA HOME*/    
-<<<<<<< HEAD
-
-     /*INICIO DEL <MAIN> DE LA PÁGINA HOME*/
-
-     /*-----------------------------------------------------------*/
-     
-
-=======
      footer {
         justify-content: space-between;
         }
->>>>>>> e625c8de4006b4ee05474eb73bbdf4feb379bf49
     }
     
     @media(min-width: 1200px){

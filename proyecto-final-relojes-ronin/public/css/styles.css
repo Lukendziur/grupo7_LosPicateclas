@@ -104,6 +104,8 @@ header{
 
 /*INICIO DEL <MAIN> DE LA PÁGINA HOME*/
 
+
+
  /*-------------------------------------------------------------------------------------*/
 
 /*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE COMPRAS*/
@@ -127,7 +129,7 @@ header{
  /*-------------------------------------------------------------------------------------*/
 
 
- 
+
 /*INICIO DE LAS MEDIA QUERIES*/    
 
 @media(min-width: 361px){
@@ -185,9 +187,14 @@ header{
              align-items:flex-end;
              margin: 0 10px;  
             }
-     /*MAIN DE LA PÁGINA HOME*/ 
-    
+     
      /*FOOTER DE LA PÁGINA HOME*/    
+
+     /*INICIO DEL <MAIN> DE LA PÁGINA HOME*/
+
+     /*-----------------------------------------------------------*/
+     
+
     }
     
     @media(min-width: 1200px){

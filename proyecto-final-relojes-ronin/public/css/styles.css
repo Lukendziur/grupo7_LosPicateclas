@@ -95,11 +95,67 @@ header{
         text-decoration: none;
         display: inline-block;
         margin: 0 8px;
-    } 
+    }
+    
+/*INICIO DEL FOOTER DE LA PÁGINA HOME*/ 
 
+footer {
+    width: 97.8vw;
+    background-color: #38534f;
+    color: white;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: auto;
+    border: black 2px solid;
+}
 
+.SobreNosotros {
+    /*border: chartreuse 2px solid;*/
+    display: none;
+    margin-bottom: 2%;
+}
 
+.FAQ {
+    /*border: blue 2px solid;*/
+    margin-bottom: 2%;
+}
 
+.FAQ ul {
+    list-style: none;
+}
+
+.FAQ ul a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.contacto {
+    display: block;
+    margin-bottom: 2%;
+    /*border: orangered 2px solid;*/
+}
+
+.mediosDePago {
+    display: block;
+    margin-bottom: 2%;
+    /*border: blueviolet 2px solid;*/
+}
+
+footer i {
+    font-size: 2rem;
+}
+
+.fa-facebook-square:before {
+    color: #1877F2
+}
+.fa-twitter-square:before {
+    color: #00acee;
+}
+.fa-whatsapp:before {
+    color: #00bb2d;
+}
 
 
 /*INICIO DEL <MAIN> DE LA PÁGINA HOME*/
@@ -188,6 +244,9 @@ header{
      /*MAIN DE LA PÁGINA HOME*/ 
     
      /*FOOTER DE LA PÁGINA HOME*/    
+     footer {
+        justify-content: space-between;
+        }
     }
     
     @media(min-width: 1200px){
@@ -217,6 +276,16 @@ header{
     
     
      /*-------------------------------------------------------------------------------------*/
-     
-     
+     footer {
+        justify-content: space-between;
+        }
+        .SobreNosotros {
+            display: block;
+        }
+        footer section h2 {
+            margin-bottom: 1.5%;
+        }
+        footer section p {
+            text-align: justify;
+        }
     }    

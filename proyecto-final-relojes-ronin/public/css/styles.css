@@ -6,11 +6,12 @@
 }
 
 header{
-    padding: 10px;
+    padding: 10px 0px 0px 0px;
     margin: auto;
     
+    
 }
-
+/*EL topMenu INCLUYE: LOGO, BARRA DE BUSQUEDAS, ICONOS.*/
 .topMenu{
     display: flex;
     flex-wrap: wrap;
@@ -18,103 +19,179 @@ header{
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    border: red solid 1px;
-}
-
-.topMenu img{
-    width: 100px;
-    border: green solid 2px;
-}
-
-.topMenu .buscador{
-    display: flex;  
-}
-
-div.ContenedorBuscador input[type=text]{
-    display: none;
-    width: fit-content;
-}
-div.ContenedorBuscador button[type=submit]{
-    border:white solid 1px;
     background-color: white;
+    width: 100%;
+} 
+    .topMenu img{
+        width: 100px;
+        
+    
+    }
 
+/*CÓDIGO DE LA BARRA DE BÚSQUEDAS*/    
+.buscador{
+   display: flex;  
+}   
+    form.buscador input[type=text]{
+        display: none;
+    }
+    
+    div.ContenedorBuscador button[type=submit]{
+    border:white solid 1px;
+    background-color: white; 
+    
+    } 
+
+/*CÓDIGO DEL CONTENEDOR DE LOS ÍCONOS*/
+.contenedorIconos{
+    display: flex;
+    flex-direction:row;
+    align-items: baseline;
+    
+    
+    
+      
 } 
 
+    .contenedorIconos i{
+        margin: 0 5px;
+        font-size: 22;
+        color: #383D3D;
+        align-items: left;           
+     
+    }
 
-.button [type="submit"]{
-    margin-left: 20px;
-}
+/*CÓDIGO DEL BURGER MENU*/
+    .burger-menu{
+        
+        text-align: center;
+        font-size: 20px;
 
+    }
+
+         .burger-menu i{
+             color:white;
+             margin: 5px;
+             background-color: #7DB9B3;
+             border-radius: 5px;
+             height: 35px;
+             width: 35px;
+             padding: 10px;
+             
+        }
+      
+  
+
+/*CÓDIGO DE LA BARRA DE: MENU, NOTICIAS, ETC.*/
 .nav-bar {
     display: none;
-    justify-content: flex-start;
     align-items: center;
     padding: 2%;
     justify-content: space-around;
-    border: rebeccapurple 1px solid;
-}
+    border: transparent 1px solid;
+    background-color: #7DB9B3;
+} 
 
-.nav-bar ul li {
-    display: inline-block;
-}
-
-.nav-bar ul li a {
-    color: #383D3D;
-    font-weight: 1000;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 8px;
-}
-
-.contenedorIconos{
-    display: flex;
-    border: red 2px solid;
-    padding: 5px;
+    .nav-bar ul li {
+        display: inline-block;
+    } 
     
-}
-.contenedorIconos i{
-    margin: 0 10px;
-    font-size: 22px;
-}
+    .nav-bar ul li a {
+        color: #383D3D;
+        font-weight: 1000;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 8px;
+    } 
 
 
 
 @media(min-width: 361px){
-    div.ContenedorBuscador input[type=text]{
+    form.buscador input[type=text]{
         display: none;
-        width: fit-content;
+        margin-right: 1px;
+        border-radius: 6px;
+        border: 1px solid lightgray;
+        background-color: #383D3D1A;
+        color: lightgray;
+        width: 70%;
+        margin-left: 30px;        
+    } 
+   
 
+    header{
+        border-bottom: 2px solid lightgray;
     }
+
+    .fa-shopping-cart:before, .fa-user-circle:before, .fa-search:before {
+        font-size: 1.5rem;
+    }
+
+    
+
+    
+    
     
     
     
 }
 
 @media(min-width: 768px){
-    .nav-bar{
-        display: flex;
+    header{
+        border-bottom: none;
     }
+    
     .burger-menu{
         display: none;
     }
-    div.ContenedorBuscador input[type=text]{
+    .nav-bar{
         display: flex;
-        width: fit-content;
-        margin-right: 1px;
     }
-    div.ContenedorBuscador button[type=submit]{
-        border:white solid 1px;
-        background-color: white;
 
+    form.buscador input[type=text]{
+        display: block;
+        width: 100%;       
+        
     } 
+    
+        div.ContenedorBuscador button[type=submit]{
+         border:white solid 1px;
+         background-color: white;
+
+        } 
+
+    .contenedorIconos{
+        align-items:flex-end;
+        margin: 0 10px;
+        
+    }
+    
+    
+    
     
 }
 @media(min-width: 1200px){
+    .topMenu img{
+        width: 150px;
+        
+    }
+
     .nav-bar{
         display: flex;
+    }
+    .nav-bar ul li a {
+        font-size: 22px;
+        margin: 0 25px;
     }
     .burger-menu{
         display: none;
     }
-}
+
+    .contenedorIconos i{
+        margin: 0 15px;
+        font-size: 35px;
+              
+    }
+
+}    
 

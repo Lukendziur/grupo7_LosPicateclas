@@ -90,7 +90,7 @@ header{
     } 
     
     .nav-bar ul li a {
-        color: #383D3D;
+        color: white;
         font-weight: 1000;
         text-decoration: none;
         display: inline-block;
@@ -100,15 +100,15 @@ header{
 /*INICIO DEL FOOTER DE LA PÁGINA HOME*/ 
 
 footer {
-    width: 97.8vw;
-    background-color: #38534f;
+    width: 100vw;
+    background-color: #7DB9B3;
     color: white;
     padding: 2%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-self: auto;
-    border: black 2px solid;
+    
 }
 
 .SobreNosotros {
@@ -116,46 +116,71 @@ footer {
     display: none;
     margin-bottom: 2%;
 }
+    .SobreNosotros h2{
+        margin-bottom: 2%;
+    }
 
-.FAQ {
-    /*border: blue 2px solid;*/
-    margin-bottom: 2%;
-}
 
-.FAQ ul {
-    list-style: none;
+   
+.FAQ{
+    margin-bottom: 12%;
+    margin-top: 12%;
 }
-
-.FAQ ul a {
-    text-decoration: none;
-    color: lightgray;
-}
+    
+    .FAQ h2{
+        margin-bottom: 2%;
+    } 
+    
+    .FAQ ul {
+        list-style: none;
+    }
+    
+    .FAQ ul a {
+        text-decoration: none;
+        color: white;    
+    }
+    
+    .FAQ ul li{
+        text-align: justify;
+    }
 
 .contacto {
     display: block;
     margin-bottom: 2%;
     /*border: orangered 2px solid;*/
 }
+    .contacto h2{
+        margin-bottom: 2%;
+    }
+
+    .contacto .mail{
+        margin-bottom: 2px;
+    }
 
 .mediosDePago {
     display: block;
     margin-bottom: 2%;
     /*border: blueviolet 2px solid;*/
 }
+    .mediosDePago h2{
+        margin-bottom: 2%;
+    }
 
+    /*COLOR Y ESTILO DE LOS ÍCONOS*/
 footer i {
     font-size: 2rem;
+    margin-left: 6px;
+    margin-bottom: 2px;
 }
-
-.fa-facebook-square:before {
-    color: #1877F2
-}
-.fa-twitter-square:before {
-    color: #00acee;
-}
-.fa-whatsapp:before {
-    color: #00bb2d;
-}
+    .fa-facebook-square:before {
+        color: #1877F2
+    }
+    .fa-twitter-square:before {
+        color: #00acee;
+    }
+    .fa-whatsapp:before {
+        color: #00bb2d;
+    }
 
 
 /*INICIO DEL <MAIN> DE LA PÁGINA HOME*/
@@ -211,6 +236,22 @@ footer i {
             font-size: 1.5rem;
         }
      /*FOOTER DE LA PÁGINA HOME*/ 
+     .FAQ ul li{
+        text-align: center;
+    }
+
+    .contacto{
+        margin-bottom: 12%;
+        margin-top: 12%;
+        
+    }
+
+    .mediosDePago{
+        margin-bottom: 12%;
+        margin-top: 12%;
+    }
+
+
         
     }
     
@@ -248,6 +289,14 @@ footer i {
      footer {
         justify-content: space-between;
         }
+
+        .FAQ{
+            margin-bottom: 0%;
+            
+        }
+            .FAQ ul li{
+                text-align: justify;
+            }   
     }
     
     @media(min-width: 1200px){
@@ -275,8 +324,6 @@ footer i {
      
      /*FOOTER DE LA PÁGINA HOME*/ 
     
-    
-     /*-------------------------------------------------------------------------------------*/
      footer {
         justify-content: space-between;
         }

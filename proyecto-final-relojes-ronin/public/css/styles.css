@@ -46,8 +46,8 @@ header{
 .contenedorIconos{
     display: flex;
     flex-direction:row;
-    align-items: baseline;    
-      
+    align-items: baseline;
+          
 } 
     .contenedorIconos i{
         margin: 0 5px;
@@ -72,13 +72,15 @@ header{
              width: 35px;
              padding: 10px;             
         }
+            i.fa.fa-bars.burger{
+                 display: table;
+            }
       
   
 
 /*CÓDIGO DE LA BARRA DE: MENU, NOTICIAS, ETC.*/
 .nav-bar {
     display: none;
-    align-items: center;
     padding: 2%;
     justify-content: space-around;
     border: transparent 1px solid;
@@ -97,103 +99,129 @@ header{
         margin: 0 8px;
     }
     
-/*INICIO DEL FOOTER DE LA PÁGINA HOME*/ 
+/*-----------INICIO DEL FOOTER DE LA PÁGINA HOME---------------*/ 
 
 footer {
-    width: 100vw;
+    width: 100%;
     background-color: #383D3DCC;
     color: white;
-    padding: 2%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-self: auto;
-    flex-direction:column;
-    
+    padding: 5%;
+    font-size: 14px;            
 }
-
-.SobreNosotros {
-    /*border: chartreuse 2px solid;*/
-    display: none;
-    margin-bottom: 2%;
-}
-    .SobreNosotros h2{
-        margin-bottom: 2%;
+    footer i {
+        font-size: 2rem;    
     }
-
-
-   
-.FAQ{
-    margin-bottom: 10%;
-    margin-top: 10%;
-    border: red solid 2px;
-    
-}
-    
-    .FAQ h2{
-        margin-bottom: 5%;
-    } 
-    
-    .FAQ ul {
-        list-style: none;
-    }
-    .FAQ ul li{
-        margin-bottom: 5%;
-    }
-    
-    .FAQ ul a {
-        text-decoration: none;
-        color: white;    
-    }
-    
-    
-
-.contacto {
-    display: block;
-    border: orangered 2px solid;
-}
-    .contacto h2{
-        margin-bottom: 5%;
-        text-align: left;
-    }
-
-    .contacto .mail{
-        margin-bottom: 5%;
-        text-align: left;
-    }
-
-    
-    .iconosSociales{
-        border: blue 2px solid;
+    .section1{
         display: flex;
-        flex-direction: row;
-        align-self: flex-end;
-    }
+        justify-content: center;
+        flex-wrap: wrap;
+        align-self: auto;
+        flex-direction:column;
+        align-items: flex-start;
 
-.mediosDePago {
-    display: block;
-    margin-bottom: 2%;
-    border: blueviolet 2px solid;
-}
-    .mediosDePago h2{
-        margin-bottom: 5%;
-        text-align: left;
     }
     
-    .iconosPago{
-        margin-top: 5px;
+    .FAQ{
+        margin-bottom: 10%;
+        margin-top: 10%;          
+    }            
+        .FAQ h2{
+            margin-bottom: 5%;
+        }             
+        .FAQ ul {
+            list-style: none;
+        }
+        .FAQ ul li{
+            margin-bottom: 5%;
+            text-align: left;
+        }
+        .FAQ ul a {
+            text-decoration: none;
+            color: white;    
+        }    
+
+    .contacto{
+        display: block;
+        margin-bottom: 10%;
+        margin-top: 10%; 
     }
-        
+        .contacto h2{
+            margin-bottom: 5%;
+            text-align: left;
+        }
+        .contacto .mail{
+            margin-bottom: 5%;
+            text-align: left;
+        }      
+            .iconosSociales{
+                display: flex;
+                flex-direction: row;
+                align-self: flex-end;
+            }
 
-    /*COLOR Y ESTILO DE LOS ÍCONOS*/
-footer i {
-    font-size: 2rem;
-    
+            .contacto i{
+                margin: 0px 8px 0px 0px;
+            }
+            
+
+    .mediosDePago {
+        display: block;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+        .mediosDePago h2{
+            margin-bottom: 5%;
+            text-align: left;
+        }
+            .iconosPago{
+                margin-top: 5px;
+            }    
+            .mediosDePago i{
+                margin: 0px 8px 0px 0px;
+            }
+            .ahora12{
+                border-radius: 5px;
+                background:linear-gradient(to bottom, #0072BB, #5bacdf);
+                border: none;
+                color:white;
+                padding: 5px;                
+                font-size: 100%;
+            } 
+                .ahora12 p{
+                   text-align: center; 
+                }
+
+    .section2{
+        display: block;
+    }
+        .section2 p{
+            text-align: center;
+        }          
+
+/*------FIN DEL FOOTER DE LA PÁGINA HOME--------------------*/
+
+
+/*-----------INICIO DEL <MAIN> DE LA PÁGINA HOME---------------*/ 
+
+/*-----------INICIO DEL <MAIN> DE LA PÁGINA FAQ---------------*/ 
+
+.FAQ-main{
+    padding: 0px 15px;
+    font-size: 14px;
+    color: #383D3D;
 }
+.FAQ-main h2{
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}  
 
-
-
-/*INICIO DEL <MAIN> DE LA PÁGINA HOME*/
+.FAQ-main p{
+    text-align: justify;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
 
 
 
@@ -229,7 +257,8 @@ footer i {
         header{
             border-bottom: 2px solid lightgray;
         }
-        
+
+      
         /*BUSCADOR QUERIE 361PX*/
         form.buscador input[type=text]{
             display: none;
@@ -246,36 +275,6 @@ footer i {
             font-size: 1.5rem;
         }
      /*FOOTER DE LA PÁGINA HOME*/ 
-
-     footer{
-         padding: 10px;
-         align-items:flex-start;
-         font-size: 14px;         
-     }
-     
-     .FAQ{
-        margin-bottom: 8%;
-        margin-top: 8%;  
-     }
-     .FAQ ul li{
-        text-align: left;
-    }
-
-    .contacto{
-        margin-bottom: 8%;
-        margin-top: 8%;   
-    }
-        .contacto i{
-            margin: 0px 8px 0px 0px;            
-        }
-
-    .mediosDePago{
-        margin-bottom: 8%;
-        margin-top: 8%;        
-    }
-        .mediosDePago i{
-            margin: 0px 6px 0px 0px; 
-        }
 
 
         
@@ -294,7 +293,7 @@ footer i {
         }
         /*ELEMENTOS QUE SÍ TIENEN QUE APARECER A PARTIR DE ESTA RESOLUCIÓN!*/
         .nav-bar{
-         display: block;
+         display: flex;
         }
          
         form.buscador input[type=text]{
@@ -311,41 +310,34 @@ footer i {
              margin: 0 10px;  
             }
      
-     /*FOOTER DE LA PÁGINA HOME*/    
-     footer {
-        justify-content: space-between;
-        flex-direction:row;
-        align-items:flex-start;
-        border: solid blue 5px;
+     /*--------FOOTER DE LA PÁGINA HOME-----------*/    
+        .section1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
 
-        .FAQ{
-            
-            margin-bottom: auto;
-            margin-top: auto;
-            
-        }
-            .FAQ ul li{
-                text-align: justify;
-               
-            }   
-              
-       .contacto{        
-            margin-bottom: auto;
-            margin-top: 0px;        
-        }
-            .contacto i{
-                margin: 0px 8px 0px 0px; 
-            }
+ /*-----------INICIO DEL <MAIN> DE LA PÁGINA FAQ---------------*/ 
 
-        .mediosDePago{
-            margin-bottom: auto;
-            margin-top: 0px;
-        }
-            .iconosPago i{
-                margin: 0px 6px 0px 0px; 
-            }
+.FAQ-main{
+    max-width: 70%;
 
+}       
+    .FAQ-main h1{
+        font-size: 35px;
+    }
+    .FAQ-main h2{
+        font-size: 18px;
+    }
+    .FAQ-main p{
+        font-size: 16px;
+        text-align: left;
+    }
+
+
+
+       
+        
     
 
 
@@ -353,7 +345,8 @@ footer i {
 }    
     @media(min-width: 1200px){
         
-     /*HEADER DE LA PÁGINA HOME*/    
+/*---------HEADER DE LA PÁGINA HOME---------*/   
+
         /*AUMENTANDO EL TAMAÑO DEL LOGO*/
         .topMenu img{
             width: 150px;        
@@ -373,24 +366,19 @@ footer i {
             margin: 0 15px;
                         
         }
-     
-     /*FOOTER DE LA PÁGINA HOME*/ 
+
+/*---------FOOTER DE LA PÁGINA HOME----------*/ 
     
      footer {
         justify-content: space-between;
         flex-direction:row;
         }
-        .SobreNosotros {
-            display: block;
-        }
+        
         footer section h2 {
             margin-bottom: 1.5%;
         }
         footer section p {
             text-align: justify;
         }
-
-
-
         
     }    

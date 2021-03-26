@@ -27,19 +27,18 @@
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
-            <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-user-circle"></i>
+            <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="/login"><i class="fas fa-user-circle"></i></a>
             <div class="burger-menu"><i class="fa fa-bars burger"></i>
             </div>
     </section>
     <section>
         <nav class="nav-bar">
             <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Inicio</a></li>
                 <li><a href="#">Colecciones</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="/FAQ">Preguntas frecuentes</a></li>
             </ul>
         </nav>
     </section>
@@ -64,29 +63,23 @@
 
 <footer>
 
-    <!--Hay que rediseñar esta parte. Hacer dos grandes secciones: section.contenido y section.copyright. Dentro
-    de cada sección van a ir diferentes divs. -->
-    
-    <section class="SobreNosotros">
-        <h2>Quienes somos</h2>
-        <!--Alt+Z ajustar párrafo-->
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque mollitia facilis numquam quisquam veniam
-            quam aliquam corrupti architecto enim veritatis. Eos, et dolore maxime veritatis ducimus eum soluta nesciunt
-            magni!</p>
-    </section>
-    <section class="FAQ">
-        <h2>Nuestra información</h2>
+    <section class="section1">
+
+        <div class="FAQ">
+        <h2>Atención al cliente</h2>
         <ul>
-            <li><a href="#">Cambios y devoluciones</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
             <li><a href="#">Envíos y retiros</a></li>
             <li><a href="#">Newsletter</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Cambios y devoluciones</a></li>
         </ul>
-    </section>
-    <section class="contacto">
+    </div>
+    <div class="contacto">
         <h2>Contacto</h2>
         <div class="mail">
             <p>inforonin@gmail.com</p>
+            <br>
+            <p>011-345081915</p>
         </div>
         <div class="iconosSociales">
             <i class="fab fa-facebook-square"></i>
@@ -94,21 +87,27 @@
             <i class="fab fa-twitter-square"></i>
             <i class="fab fa-whatsapp"></i>
         </div>
-    </section>
-    <section class="mediosDePago">
+    </div>
+    <div class="mediosDePago">
         <h2>Medios de pago</h2>
+        <div class="ahora12">
+            <p>Ahora 12 y Ahora 18</p>
+        </div>
     <div class="iconosPago">
         <i class="fab fa-cc-visa"></i>
         <i class="fab fa-cc-paypal"></i>
         <i class="fab fa-cc-mastercard"></i>
         <i class="fab fa-cc-amex"></i>
     </div>
-    </section>
+    </div>
+</section>    
 
-   
-<section class="derechosR">
+<section class="section2"> 
+    <div class="derechosR">
         <p>© 2021 R o n i n</p>
-    </section>
+    </div>
+
+</section> 
 </footer>
  
 

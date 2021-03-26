@@ -101,13 +101,14 @@ header{
 
 footer {
     width: 100vw;
-    background-color: #7DB9B3;
+    background-color: #383D3DCC;
     color: white;
     padding: 2%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-self: auto;
+    flex-direction:column;
     
 }
 
@@ -123,16 +124,21 @@ footer {
 
    
 .FAQ{
-    margin-bottom: 12%;
-    margin-top: 12%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border: red solid 2px;
+    
 }
     
     .FAQ h2{
-        margin-bottom: 2%;
+        margin-bottom: 5%;
     } 
     
     .FAQ ul {
         list-style: none;
+    }
+    .FAQ ul li{
+        margin-bottom: 5%;
     }
     
     .FAQ ul a {
@@ -140,47 +146,51 @@ footer {
         color: white;    
     }
     
-    .FAQ ul li{
-        text-align: justify;
-    }
+    
 
 .contacto {
     display: block;
-    margin-bottom: 2%;
-    /*border: orangered 2px solid;*/
+    border: orangered 2px solid;
 }
     .contacto h2{
-        margin-bottom: 2%;
+        margin-bottom: 5%;
+        text-align: left;
     }
 
     .contacto .mail{
-        margin-bottom: 2px;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+
+    
+    .iconosSociales{
+        border: blue 2px solid;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
     }
 
 .mediosDePago {
     display: block;
     margin-bottom: 2%;
-    /*border: blueviolet 2px solid;*/
+    border: blueviolet 2px solid;
 }
     .mediosDePago h2{
-        margin-bottom: 2%;
+        margin-bottom: 5%;
+        text-align: left;
     }
+    
+    .iconosPago{
+        margin-top: 5px;
+    }
+        
 
     /*COLOR Y ESTILO DE LOS ÍCONOS*/
 footer i {
     font-size: 2rem;
-    margin-left: 6px;
-    margin-bottom: 2px;
+    
 }
-    .fa-facebook-square:before {
-        color: #1877F2
-    }
-    .fa-twitter-square:before {
-        color: #00acee;
-    }
-    .fa-whatsapp:before {
-        color: #00bb2d;
-    }
+
 
 
 /*INICIO DEL <MAIN> DE LA PÁGINA HOME*/
@@ -236,20 +246,36 @@ footer i {
             font-size: 1.5rem;
         }
      /*FOOTER DE LA PÁGINA HOME*/ 
+
+     footer{
+         padding: 10px;
+         align-items:flex-start;
+         font-size: 14px;         
+     }
+     
+     .FAQ{
+        margin-bottom: 8%;
+        margin-top: 8%;  
+     }
      .FAQ ul li{
-        text-align: center;
+        text-align: left;
     }
 
     .contacto{
-        margin-bottom: 12%;
-        margin-top: 12%;
-        
+        margin-bottom: 8%;
+        margin-top: 8%;   
     }
+        .contacto i{
+            margin: 0px 8px 0px 0px;            
+        }
 
     .mediosDePago{
-        margin-bottom: 12%;
-        margin-top: 12%;
+        margin-bottom: 8%;
+        margin-top: 8%;        
     }
+        .mediosDePago i{
+            margin: 0px 6px 0px 0px; 
+        }
 
 
         
@@ -288,17 +314,43 @@ footer i {
      /*FOOTER DE LA PÁGINA HOME*/    
      footer {
         justify-content: space-between;
+        flex-direction:row;
+        align-items:flex-start;
+        border: solid blue 5px;
         }
 
         .FAQ{
-            margin-bottom: 0%;
+            
+            margin-bottom: auto;
+            margin-top: auto;
             
         }
             .FAQ ul li{
                 text-align: justify;
+               
             }   
-    }
+              
+       .contacto{        
+            margin-bottom: auto;
+            margin-top: 0px;        
+        }
+            .contacto i{
+                margin: 0px 8px 0px 0px; 
+            }
+
+        .mediosDePago{
+            margin-bottom: auto;
+            margin-top: 0px;
+        }
+            .iconosPago i{
+                margin: 0px 6px 0px 0px; 
+            }
+
     
+
+
+
+}    
     @media(min-width: 1200px){
         
      /*HEADER DE LA PÁGINA HOME*/    
@@ -326,6 +378,7 @@ footer i {
     
      footer {
         justify-content: space-between;
+        flex-direction:row;
         }
         .SobreNosotros {
             display: block;
@@ -336,4 +389,8 @@ footer i {
         footer section p {
             text-align: justify;
         }
+
+
+
+        
     }    

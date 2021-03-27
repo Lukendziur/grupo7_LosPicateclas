@@ -229,22 +229,47 @@ footer {
 
 /*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE COMPRAS*/
 
-button {
-    background-color:black;
-    color: white;
-    font-size: 5px;
-    border: none;
-    padding: 20px;
-    transition: opacity 0.20s ease-in-out;
-}
-
-button:hover {
-    opacity: 0.5;
-}
 
  /*-------------------------------------------------------------------------------------*/
 
 /*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE FACTURACIÓN*/
+
+
+.contenedor-billing {
+    border: red solid 1px;
+    
+}
+
+.form-billing {
+    padding: 20px;
+    background-color:#f5f5f5
+}
+
+.control-formulario {
+    margin: 15px;
+    display: block;
+    text-align: center;
+    
+}
+
+    .control-formulario h2 {
+    margin-bottom: 20px;
+    }
+
+.button-billing {
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 20px;
+    transition: opacity 0.20s ease-in-out;
+    display: flex;
+    margin: auto;
+}
+
+.button-billing:hover {
+    opacity: 0.5;
+}
+
 
  /*-------------------------------------------------------------------------------------*/
 

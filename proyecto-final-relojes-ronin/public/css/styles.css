@@ -243,7 +243,7 @@ footer {
 
  /*-------------------------------------------------------------------------------------*/
 
-/*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE DETALLE DEL PRODUCTO*/
+/*INICIO DEL <MAIN> DE LA PÁGINA DE DETALLE DEL PRODUCTO*/
 
 section.producto-detalle div {
     margin: 4%;
@@ -261,8 +261,16 @@ section.producto-detalle {
     border: red 3px solid;
 }
 
+section.producto-detalle h4 {
+    margin: 5px 0 5px 0;
+}
+
 article.contenedor-fotos {
     border: green 3px solid;
+}
+
+.cantidades {
+    border: blue 3px solid;
 }
 
 article.descripción-producto {
@@ -275,9 +283,17 @@ article.descripción-producto button {
     margin-top: 4%;
 }
 
-.cantidades {
-    border: blue 3px solid;
+.productos-similares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: coral 3px solid;
 }
+
+/*.producto-similar1, .producto-similar2, .producto-similar3, .producto-similar4 {
+    border: rgb(235, 230, 230) 1px double;
+    box-shadow : 0px 0px 3px rgb(100, 100, 100 );
+}*/
 
 /*Carrousel de imagenes*/
 

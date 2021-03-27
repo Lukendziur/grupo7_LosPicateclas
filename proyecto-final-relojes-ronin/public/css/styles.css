@@ -202,6 +202,80 @@ footer {
 
 
 /*-----------INICIO DEL <MAIN> DE LA PÁGINA HOME---------------*/ 
+.main-index{
+    padding: 10px;
+}
+.bloque-carrusel{
+    background-color: lightseagreen;
+    width: 100%;
+    height: 300px;
+}
+
+.bloque-genderLineas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110px;
+    margin-top: 5%;
+    color: white;
+    font-weight: 600;
+    
+}
+    .masculine{
+        background-color: #A17C46;
+        width: 100%;
+        height: 33px;
+        padding: 8px;
+        text-align: center;
+        border-radius: 3px;
+        margin-bottom: 3%;
+    }
+    .fem{
+        background-color: #A17C46;
+        width: 100%;
+        height: 33px;
+        padding: 8px;
+        text-align: center;
+        border-radius: 3px;
+        margin-bottom: 3%;
+    }
+    .n-gender{
+        background-color: #A17C46;
+        width: 100%;
+        height: 33px;
+        padding: 8px;
+        text-align: center;
+        border-radius: 3px;
+        margin-bottom: 3%;
+    }
+.bloque-filtros-productos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 100%;
+    height: 800px;
+    
+}   
+    .filtrosR{
+        background-color: lightgray;
+        border-radius: 5px;
+        width: 100%;
+        height: 200px;
+    }
+    .productosR{
+        background-color: lightskyblue;
+        width: 100%;
+        height: 600px;
+        margin-top: 5%
+
+    }
+    
+
+
+
+
+
+
 
 /*-----------INICIO DEL <MAIN> DE LA PÁGINA FAQ---------------*/ 
 
@@ -495,6 +569,38 @@ img {vertical-align: middle;}
         text-align: left;
     }
 
+
+
+/*-----------INICIO DEL <MAIN> DE LA PÁGINA HOME---------------*/ 
+.bloque-filtros-productos{
+    display: flex;
+    flex-direction: row;
+    
+    }
+
+    .filtrosR {
+        width: 20%;
+        height: auto;
+        border-right: lightgray 2px solid;        
+    }
+
+    .productosR{
+        width: 80%;
+        height: auto;
+        margin:unset;
+    }
+
+ .bloque-genderLineas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: unset;
+}   
+    .masculine, .fem, .n-gender{
+        width: 33%;
+        margin-left: 2%;
+        margin-right: 2%;
+    } 
 
 /*------------INICIO DEL <MAIN> DE DETALLE DE PRODUCTO------*/
        

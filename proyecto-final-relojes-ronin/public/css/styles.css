@@ -286,6 +286,18 @@ article.contenedor-fotos {
     border: blue 3px solid;
 }
 
+.cantidadProducto {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.cantidadCuotas {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
 article.descripción-producto {
     border: yellow 3px solid;
 }

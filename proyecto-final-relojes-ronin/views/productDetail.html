@@ -16,6 +16,142 @@
 
 <body>
 
+    <header>
+        <section class="topMenu">
+            <img src="/images/Logo-Ronin.png" alt="Logo Ronin">
+
+            <div class="contenedorIconos">
+
+                <div class="ContenedorBuscador">
+                    <form class="buscador" action="action_page.php">
+                        <input type="text" placeholder="Buscar" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="/login"><i class="fas fa-user-circle"></i></a>
+                <div class="burger-menu"><i class="fa fa-bars burger"></i>
+                </div>
+        </section>
+        <section>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Colecciones</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="/FAQ">Preguntas frecuentes</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="producto-detalle">
+            <article class="contenedor-fotos">
+                <div class="contenedor-carrousel">
+                    <div class="diapositivas fade">
+                        <div class="numero">1/3</div>
+                        <img src="/images/Reloj1.jpg" style="width: 100%">
+                        <div class="texto">Reloj1</div>
+                    </div>
+                    <!--
+                <div class="diapositivas fade">
+                    <div class="numero">2/3</div>
+                    <img src="/images/Reloj2.jpg" style="width: 100%">
+                    <div class="texto">Reloj2</div>
+                </div>
+                <div class="diapositivas fade">
+                    <div class="numero">3/3</div>
+                    <img src="/images/Reloj3.jpg" style="width: 100%">
+                    <div class="texto">Reloj3</div>
+                </div>
+                <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="próximo" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <label for="unidades">Cantidad de unidades</label>
+                <input type="number" name="unidades" id="unidades">
+                <br>
+                <label for="cuotas">Cantidad de cuotas</label>
+                <input type="number" name="cuotas" id="cuotas">
+                <br>
+                <div class="Descripción del artículo">
+                    <h3>Descripción del artículo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam exercitationem et possimus
+                        voluptates id. Libero ex dicta id quo placeat, quas quaerat, aliquid illum velit iure vel
+                        quibusdam laborum.</p>
+                </div>
+                <div class="Componentes del artículo"></div>
+                <h3>Componentes del artículo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum nihil, recusandae voluptatum
+                    quaerat voluptate reiciendis ratione hic ea veniam laboriosam provident illo ex, mollitia
+                    dignissimos sed nesciunt modi officia!</p>
+                <label for="agregar" method="#"></label>
+                <button type="submit">Agregar a carrito</button>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="section1">
+
+            <div class="FAQ">
+                <h2>Atención al cliente</h2>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Envíos y retiros</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Cambios y devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <div class="mail">
+                    <p>inforonin@gmail.com</p>
+                    <br>
+                    <p>011-345081915</p>
+                </div>
+                <div class="iconosSociales">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="mediosDePago">
+                <h2>Medios de pago</h2>
+                <div class="ahora12">
+                    <p>Ahora 12 y Ahora 18</p>
+                </div>
+                <div class="iconosPago">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="derechosR">
+                <p>© 2021 R o n i n</p>
+            </div>
+
+        </section>
+    </footer>
+
 </body>
 
 </html>

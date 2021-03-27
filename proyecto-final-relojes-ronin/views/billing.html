@@ -13,7 +13,42 @@
     <link rel="stylesheet" href="css/normalize.css">
     <title>Facturación</title>
 </head>
-
+<section class="topMenu">
+    <img src="/images/Logo-Ronin.png" alt="Logo Ronin">
+    <div class="contenedorIconos">
+        <div class="ContenedorBuscador">
+            <form class="buscador" action="action_page.php">
+                <input type="text" placeholder="Buscar" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
+        <a href="/login"><i class="fas fa-user-circle"></i></a>
+        <div class="burger-menu"><i class="fa fa-bars burger"></i>
+        </div>
+</section>
+<h1>PAYMENT</h1>
+<section>
+    <form action="/billing" method="POST">
+        <label for="payment-type">Método de pago preferido:</label>
+        <br>
+        <label for="Efectivo"> <input type="radio" name="payment-type" value="Efectivo" id="Efectivo" required> Efectivo </label>
+        <label for="Débito"><input type="radio" name="payment-type" value="Débito" id="Débito" required checked> Débito </label>
+        <label for="Crédito"><input type="radio" name="payment-type" value="Crédito" id="Crédito" required> Crédito</label>
+    </section>
+    <br>
+    <br>
+<h2>Ingresá los datos de tu tarjeta:</h2>
+<section>
+    <label for="card-data">Número de la tarjeta *:</label>
+    <br>
+    <label><input type="number" name="card-dat" id="card-data" placeholder="Ej. 12345-6789" required></label>
+    </section>
+    <br>
+    <br>
+    <button type="submit">Realizar compra</button>
+    </form>
+</section>
 <body>
 
 </body>

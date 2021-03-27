@@ -281,11 +281,18 @@ article.descripción-producto button {
     margin: auto;
     display: flex;
     margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 1rem;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow : 0px 0px 7px rgb(100, 100, 100 );
+    color: white;
+    background-color: #5bacdf
 }
 
 .productos-similares {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     border: coral 3px solid;
 }
@@ -418,7 +425,6 @@ img {vertical-align: middle;}
         }
      /*FOOTER DE LA PÁGINA HOME*/ 
 
-
         
     }
     
@@ -477,11 +483,25 @@ img {vertical-align: middle;}
     }
 
 
-
+/*------------INICIO DEL <MAIN> DE DETALLE DE PRODUCTO------*/
        
-        
-    
 
+
+.contenedor-detalle-producto {
+    display: flex;
+}
+
+.productos-similares {
+    display: flex;
+    border: turquoise 3px solid;
+}
+
+.productos-similares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: coral 3px solid;
+}
 
 
 }    

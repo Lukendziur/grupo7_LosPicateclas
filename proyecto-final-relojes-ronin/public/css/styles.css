@@ -311,6 +311,18 @@ article.contenedor-fotos {
     border: blue 3px solid;
 }
 
+.cantidadProducto {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.cantidadCuotas {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
 article.descripción-producto {
     border: yellow 3px solid;
 }
@@ -449,7 +461,8 @@ img {vertical-align: middle;}
         /*BUSCADOR QUERIE 361PX*/
         form.buscador input[type=text]{
             display: none;
-            margin-right: 1px;
+            margin: 20px 1px;
+            /*  margin-right: 1px;*/
             border-radius: 6px;
             border: 1px solid lightgray;
             background-color: #383D3D1A;
@@ -481,14 +494,19 @@ img {vertical-align: middle;}
         .nav-bar{
          display: flex;
         }
-         
+         .ContenedorBuscador{
+             align-items: baseline;
+             margin: -20px 0px;
+         }
         form.buscador input[type=text]{
          display: block;
-         width: 100%;       
+         width: 100%;   
+             
         }     
             div.ContenedorBuscador button[type=submit]{
              border:white solid 1px;
              background-color: white;
+             
             }
             
             .contenedorIconos{

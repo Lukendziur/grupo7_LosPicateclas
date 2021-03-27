@@ -303,22 +303,47 @@ footer {
 
 /*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE COMPRAS*/
 
-button {
-    background-color:black;
-    color: white;
-    font-size: 5px;
-    border: none;
-    padding: 20px;
-    transition: opacity 0.20s ease-in-out;
-}
-
-button:hover {
-    opacity: 0.5;
-}
 
  /*-------------------------------------------------------------------------------------*/
 
 /*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE FACTURACIÓN*/
+
+
+.contenedor-billing {
+    border: red solid 1px;
+    
+}
+
+.form-billing {
+    padding: 20px;
+    background-color:#f5f5f5
+}
+
+.control-formulario {
+    margin: 15px;
+    display: block;
+    text-align: center;
+    
+}
+
+    .control-formulario h2 {
+    margin-bottom: 20px;
+    }
+
+.button-billing {
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 20px;
+    transition: opacity 0.20s ease-in-out;
+    display: flex;
+    margin: auto;
+}
+
+.button-billing:hover {
+    opacity: 0.5;
+}
+
 
  /*-------------------------------------------------------------------------------------*/
 
@@ -358,6 +383,18 @@ article.contenedor-fotos {
 
 .cantidades {
     border: blue 3px solid;
+}
+
+.cantidadProducto {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.cantidadCuotas {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
 }
 
 article.descripción-producto {
@@ -498,7 +535,8 @@ img {vertical-align: middle;}
         /*BUSCADOR QUERIE 361PX*/
         form.buscador input[type=text]{
             display: none;
-            margin-right: 1px;
+            margin: 20px 1px;
+            /*  margin-right: 1px;*/
             border-radius: 6px;
             border: 1px solid lightgray;
             background-color: #383D3D1A;
@@ -530,14 +568,19 @@ img {vertical-align: middle;}
         .nav-bar{
          display: flex;
         }
-         
+         .ContenedorBuscador{
+             align-items: baseline;
+             margin: -20px 0px;
+         }
         form.buscador input[type=text]{
          display: block;
-         width: 100%;       
+         width: 100%;   
+             
         }     
             div.ContenedorBuscador button[type=submit]{
              border:white solid 1px;
              background-color: white;
+             
             }
             
             .contenedorIconos{

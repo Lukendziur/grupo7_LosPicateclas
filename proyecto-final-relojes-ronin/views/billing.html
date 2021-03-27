@@ -28,25 +28,46 @@
         </div>
 </section>
 <h1>PAYMENT</h1>
-<section>
-    <form action="/billing" method="POST">
-        <label for="payment-type">Método de pago preferido:</label>
-        <br>
-        <label for="Efectivo"> <input type="radio" name="payment-type" value="Efectivo" id="Efectivo" required> Efectivo </label>
-        <label for="Débito"><input type="radio" name="payment-type" value="Débito" id="Débito" required checked> Débito </label>
-        <label for="Crédito"><input type="radio" name="payment-type" value="Crédito" id="Crédito" required> Crédito</label>
-    </section>
-    <br>
-    <br>
-<h2>Ingresá los datos de tu tarjeta:</h2>
-<section>
-    <label for="card-data">Número de la tarjeta *:</label>
-    <br>
-    <label><input type="number" name="card-dat" id="card-data" placeholder="Ej. 12345-6789" required></label>
-    </section>
-    <br>
-    <br>
-    <button type="submit">Realizar pago</button>
+<section class="contenedor-billing">
+    <form action="/billing" method="POST" class="form-billing">
+        <div class="control-formulario">
+            <h2>Método de pago preferido:</h2>
+            <label for="payment-type"></label>
+            <label for="Efectivo"> 
+                <input type="radio" name="payment-type" value="Efectivo" id="Efectivo" required> Efectivo </label>
+            <label for="Débito">
+                <input type="radio" name="payment-type" value="Débito" id="Débito" required checked> Débito </label>
+            <label for="Crédito">
+                <input type="radio" name="payment-type" value="Crédito" id="Crédito" required> Crédito</label>    
+        </div>
+
+        <div class="control-formulario">
+            <h2>Ingresá los datos de tu tarjeta:</h2>
+            <label for="card-number">Número de la tarjeta* :</label>
+                <label><input type="number" name="card-number" id="card-number" placeholder="Ej. 12345-6789" required></label>
+        </div>
+        <div class="control-formulario">
+            <label for="card-date">Fecha de vencimiento* :</label>
+                <label><input type="number" name="card-date" id="card-date" placeholder="mm/aa" required></label>
+        </div>
+        <div class="control-formulario">
+            <label for="card-pass">Código de seguridad* :</label>
+                <label><input type="password" name="card-pass" id="card-pass" required></label>
+        </div>
+        <div class="control-formulario">
+            <label for="cuotas">Número de cuotas* :</label>
+                <select name="cuotas">
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+        </div>
+        <div>
+            <h2 class="control-formulario">Pago en efectivo:</h2>
+
+        </div>
+            
+    <button type="submit" class="button-billing">Realizar pago</button>
     </form>
 </section>
 <body>

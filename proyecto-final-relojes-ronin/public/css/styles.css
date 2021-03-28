@@ -19,13 +19,15 @@ header{
     margin: auto;
     background-color: white;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
     
 } 
     .topMenu img{
         width: 100px;
-        
-    
     }
+
 
 /*CÓDIGO DE LA BARRA DE BÚSQUEDAS*/    
 .buscador{
@@ -78,6 +80,7 @@ header{
     padding: 2%;
     justify-content: space-around;
     background-color: white;
+    z-index: 100;
     
 } 
 
@@ -405,6 +408,7 @@ section.producto-detalle div {
     margin-bottom: 3%;
 }
 
+
 section.producto-detalle {
     padding: 2%;
     margin: auto;
@@ -412,6 +416,7 @@ section.producto-detalle {
     flex-direction: column;
     justify-content: center;
     border: red 3px solid;
+    margin-top: 51px;
 }
 
 section.producto-detalle h4 {
@@ -569,7 +574,8 @@ img {vertical-align: middle;}
 
     /*HEADER DE LA PÁGINA HOME*/    
      .topMenu{
-         position: relative;
+         position: fixed;
+         top: 0;
      }  
 
       
@@ -592,6 +598,13 @@ img {vertical-align: middle;}
         }
      /*FOOTER DE LA PÁGINA HOME*/ 
 
+
+     /*MAIN DETALLE DE PRODUCTO*/
+
+     section.producto-detalle {
+         margin-top: 67px;
+     }
+
         
     }
     
@@ -613,7 +626,7 @@ img {vertical-align: middle;}
         }
         /*ELEMENTOS QUE SÍ TIENEN QUE APARECER A PARTIR DE ESTA RESOLUCIÓN!*/
         .nav-bar{
-         display: flex; 
+         display: flex;
          
         }
          .ContenedorBuscador{
@@ -754,6 +767,10 @@ img {vertical-align: middle;}
     border: coral 3px solid;
 }
 
+/*section.producto-detalle {
+    margin-top: 130px;
+}*/
+
 
 }    
 @media(min-width: 1200px){
@@ -762,6 +779,15 @@ img {vertical-align: middle;}
 .topMenu{
     align-items: unset;
     padding: 1%;
+}
+.bloque-carrusel{
+    margin-top: 135px;
+    }
+
+/*-------MAIN DETALLE DE PRODUCTO----------*/
+
+.producto-detalle {
+    margin-top: 150px;
 }
        
 /*AUMENTANDO EL TAMAÑO DEL LOGO*/
@@ -772,8 +798,9 @@ img {vertical-align: middle;}
         .nav-bar{
             display: flex;
             padding: 1%;
-
-            
+            position: fixed;
+            top: 80px;
+            width: 100%;
             
         }    
             .nav-bar ul li a {

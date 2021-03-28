@@ -373,23 +373,39 @@ footer {
     text-align: center;
     align-items: center;
     display: flex;
+    margin-top: 80px;
   
    flex-flow: column;
+}
+.datos-del-login-mas-especificos{
+border: solid 1px black;
+background-color: #c4c4c4;
 }
 .cajon-principal-del-login{
      margin: 20px 10px;
 }
 .datosDelLogin{
-margin: 15px;
+margin: 25px 0px;
 padding: 5px;
 width:100%;
+font-size: 25px;
 }
 .caraDelLogin{
-    display: flex;
+    font-size: 15px;
     flex-flow: row;
     position: relative;
-    left: 12px;
 
+}
+.boton-del-login{
+    
+    font-size: 30px;
+    
+}
+.boton-login-interno{
+
+padding: 10px;
+background-color: #7DB9B3;
+color: black
 }
 
 
@@ -770,7 +786,11 @@ img {vertical-align: middle;}
 /*section.producto-detalle {
     margin-top: 130px;
 }*/
-
+ /*media cuerri del login*/
+ .caraDelLogin{
+                
+    font-size: 35px;
+}
 
 }    
 @media(min-width: 1200px){
@@ -869,6 +889,9 @@ img {vertical-align: middle;}
             width: 100%;
             /*border: #A17C46 2px solid;*/
            }
-                
+          
+           
+
+           
     }    
     

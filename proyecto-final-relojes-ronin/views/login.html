@@ -27,7 +27,7 @@
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
-                <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="/Carrito-compras"><i class="fas fa-shopping-cart"></i></a>
                 <a href="/login"><i class="fas fa-user-circle"></i></a>
                 <div class="burger-menu"><i class="fa fa-bars burger"></i>
                 </div>
@@ -49,34 +49,42 @@
     
     <div class="cajon-principal-del-login">
         <div class="caraDelLogin">
-            <img src="/images/Logo-Ronin-variante.png" width=100px>
-            <h1 class="tituloDelLogin">login</h1>
-            <img src="/images/Logo-Ronin-variante.png" width=100px>
+            
+            <h1 class="tituloDelLogin">Iniciar sesión  </h1>
+            
 </div>
     <form action="/login" method="POST">
         <div class="datosDelLogin">
 <div class="nombre-e-email-del-login">
-    <label for="email del usuario">su email</label>
+    <label for="email del usuario">Su email</label>
 </div>
-    <input type="email" name="su email" id="email del usuario">
+    <input class="datos-del-login-mas-especificos" type="email" name="su email" id="email del usuario" placeholder="Su email" required>
 </div>
 <div class="datosDelLogin">
     <div class="nombre-e-email-del-login">
-    <label for="su contraseña">su contraseña</label>
+    <label for="su contraseña">Su contraseña</label>
 </div>
-    <input type="password" name="su contraseña" id="su contraseña">
+    <input class="datos-del-login-mas-especificos" type="password" name="su contraseña" id="su contraseña" placeholder="Su contraseña"required>
 </div>
 <div class="datosDelLogin">
     <label for="recordatorio de cuenta"></label>
-    <input type="checkbox" name="recordatorio" id="recordatorio de cuenta">recordar contraseña
+    <input type="checkbox" name="recordatorio" id="recordatorio de cuenta" >Recordar contraseña
     </div>
+<div class="datosDelLogin">
+    <div class="boton-del-login">
+<button class="boton-login-interno" type="submit">Acceder</button>
+</div>
+</div>
+
 </form>
 <div class="datosDelLogin">
-<a href="/proyecto-final-relojes-ronin/views/register.html">¿olvido su contraseña?</a>
+<a href="">¿Olvido su contraseña?</a>
+
 </div>
 <div class="datosDelLogin">
-<button type="submit">acceder</button>
+<a href="/Registro"><p>¿No tienes cuenta aún? Regístrate</p></a>
 </div>
+
 </div>
 </main>
 

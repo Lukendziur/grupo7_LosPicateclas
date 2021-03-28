@@ -447,7 +447,7 @@ article.descripción-producto {
     border: yellow 3px solid;
 }
 
-article.descripción-producto button {
+article.descripción-producto button.add, article.descripción-producto button.share {
     margin: auto;
     display: flex;
     margin-top: 4%;
@@ -455,9 +455,19 @@ article.descripción-producto button {
     font-size: 1rem;
     padding: 2%;
     border-radius: 5px;
-    box-shadow : 0px 0px 7px rgb(100, 100, 100 );
+    width: 100%;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    transition: all 450ms;
+}
+
+article.descripción-producto button.add:hover, article.descripción-producto button.share:hover {
+    background-color: rgb(0, 56, 9);
+    border: rgb(0, 56, 9);
     color: white;
-    background-color: #5bacdf
+    padding: 30%;
+    font-size: 1.5rem;
 }
 
 .productos-similares {
@@ -465,6 +475,42 @@ article.descripción-producto button {
     flex-direction: column;
     justify-content: space-between;
     border: coral 3px solid;
+}
+
+.producto-similar1,  .producto-similar2, .producto-similar3, .producto-similar4 {
+    border: palevioletred 2px solid;
+    position: relative;
+}
+
+.producto-similar1 div.nombre-producto, .producto-similar2 div.nombre-producto, .producto-similar3 div.nombre-producto, .producto-similar4 div.nombre-producto {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 2.1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 450ms;
+
+}
+
+.producto-similar1 div.precio-producto, .producto-similar2 div.precio-producto, .producto-similar3 div.precio-producto, .producto-similar4 div.precio-producto {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.producto-similar1:hover div.precio-producto, .producto-similar2:hover div.precio-producto, .producto-similar3:hover div.precio-producto, .producto-similar4:hover div.precio-producto, .producto-similar1:hover div.nombre-producto, .producto-similar2:hover div.nombre-producto, .producto-similar3:hover div.nombre-producto, .producto-similar4:hover div.nombre-producto{
+    opacity: 1;
 }
 
 /*.producto-similar1, .producto-similar2, .producto-similar3, .producto-similar4 {
@@ -767,9 +813,9 @@ img {vertical-align: middle;}
     border: coral 3px solid;
 }
 
-/*section.producto-detalle {
-    margin-top: 130px;
-}*/
+section.producto-detalle {
+    margin-top: 140px;
+}
 
 
 }    
@@ -829,9 +875,9 @@ img {vertical-align: middle;}
         }
         
 /*----------------SECCIÓN PRODUCTOS PAG HOME--*/
- .productosR{
-    /*border: 2px red solid;*/
-    }
+ /*.productosR{
+    border: 2px red solid;
+    }*/
             
     .articulosR{
         /*border: lightgreen 2px solid;*/

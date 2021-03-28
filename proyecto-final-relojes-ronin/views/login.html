@@ -15,6 +15,131 @@
 </head>
 
 <body>
+    <header>
+        <section class="topMenu">
+            <img src="/images/Logo-Ronin.png" alt="Logo Ronin">
+    
+            <div class="contenedorIconos">
+    
+                <div class="ContenedorBuscador">
+                    <form class="buscador" action="action_page.php">
+                        <input type="text" placeholder="Buscar" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="/login"><i class="fas fa-user-circle"></i></a>
+                <div class="burger-menu"><i class="fa fa-bars burger"></i>
+                </div>
+        </section>
+        <section>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Colecciones</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="/FAQ">Preguntas frecuentes</a></li>
+                </ul>
+            </nav>
+        </section>
+    
+    </header>
+
+<main class="mainDelLogin">
+    
+    <div class="cajon-principal-del-login">
+        <div class="caraDelLogin">
+            <img src="/images/Logo-Ronin-variante.png" width=100px>
+            <h1 class="tituloDelLogin">login</h1>
+            <img src="/images/Logo-Ronin-variante.png" width=100px>
+</div>
+    <form action="/login" method="POST">
+        <div class="datosDelLogin">
+<div class="nombre-e-email-del-login">
+    <label for="email del usuario">su email</label>
+</div>
+    <input type="email" name="su email" id="email del usuario">
+</div>
+<div class="datosDelLogin">
+    <div class="nombre-e-email-del-login">
+    <label for="su contraseña">su contraseña</label>
+</div>
+    <input type="password" name="su contraseña" id="su contraseña">
+</div>
+<div class="datosDelLogin">
+    <label for="recordatorio de cuenta"></label>
+    <input type="checkbox" name="recordatorio" id="recordatorio de cuenta">recordar contraseña
+    </div>
+</form>
+<div class="datosDelLogin">
+<a href="/proyecto-final-relojes-ronin/views/register.html">¿olvido su contraseña?</a>
+</div>
+<div class="datosDelLogin">
+<button type="submit">acceder</button>
+</div>
+</div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <section class="section1">
+    
+            <div class="FAQ">
+            <h2>Atención al cliente</h2>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Envíos y retiros</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Cambios y devoluciones</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <div class="mail">
+                <p>inforonin@gmail.com</p>
+                <br>
+                <p>011-345081915</p>
+            </div>
+            <div class="iconosSociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+        <div class="mediosDePago">
+            <h2>Medios de pago</h2>
+            <div class="ahora12">
+                <p>Ahora 12 y Ahora 18</p>
+            </div>
+        <div class="iconosPago">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+        </div>
+        </div>
+    </section>    
+    
+    <section class="section2"> 
+        <div class="derechosR">
+            <p>© 2021 R o n i n</p>
+        </div>
+    
+    </section> 
+    </footer>
+
 
 </body>
 

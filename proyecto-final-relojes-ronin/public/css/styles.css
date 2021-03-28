@@ -348,6 +348,29 @@ footer {
  /*-------------------------------------------------------------------------------------*/
 
 /*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE LOGIN*/
+.mainDelLogin{
+    text-align: center;
+    align-items: center;
+    display: flex;
+  
+   flex-flow: column;
+}
+.cajon-principal-del-login{
+     margin: 20px 10px;
+}
+.datosDelLogin{
+margin: 15px;
+padding: 5px;
+width:100%;
+}
+.caraDelLogin{
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    left: 12px;
+
+}
+
 
  /*-------------------------------------------------------------------------------------*/
 

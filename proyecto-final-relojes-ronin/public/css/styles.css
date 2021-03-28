@@ -36,7 +36,7 @@ header{
     }
     
     div.ContenedorBuscador button[type=submit]{
-    border:white solid 1px;
+    border: transparent;
     background-color: white; 
     
     } 
@@ -63,17 +63,12 @@ header{
         font-size: 20px;
     }
          .burger-menu i{
-             color:white;
-             margin: 5px;
-             background-color: #7DB9B3;
-             border-radius: 5px;
-             height: 35px;
+             
+             
              width: 35px;
-             padding: 10px;             
+                        
         }
-            i.fa.fa-bars.burger{
-                 display: table;
-            }
+            
       
   
 
@@ -102,7 +97,7 @@ header{
 
 footer {
     width: 100%;
-    background-color: #383D3DCC;
+    background-color: #212121;
     color: white;
     padding: 5%;
     font-size: 14px;            
@@ -215,33 +210,20 @@ footer {
     font-weight: 600;
     
 }
-    .masculine{
-        background-color: #A17C46;
-        width: 100%;
-        height: 33px;
-        padding: 8px;
-        text-align: center;
-        border-radius: 3px;
-        margin-bottom: 3%;
-    }
-    .fem{
-        background-color: #A17C46;
-        width: 100%;
-        height: 33px;
-        padding: 8px;
-        text-align: center;
-        border-radius: 3px;
-        margin-bottom: 3%;
-    }
-    .n-gender{
-        background-color: #A17C46;
-        width: 100%;
-        height: 33px;
-        padding: 8px;
-        text-align: center;
-        border-radius: 3px;
-        margin-bottom: 3%;
-    }
+
+.masculine, .fem, .n-gender{
+    border: #12784A 2px solid;
+    width: 100%;
+    height: 33px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 3%;
+    color: #12784A;
+}
+    
+   
+    
 .bloque-filtros-productos{
     display: flex;
     flex-direction: column;
@@ -643,11 +625,7 @@ img {vertical-align: middle;}
          width: 100%;   
              
         }     
-            div.ContenedorBuscador button[type=submit]{
-             border:white solid 1px;
-             background-color: white;
-             
-            }
+           
             
             .contenedorIconos{
              align-items:flex-end;

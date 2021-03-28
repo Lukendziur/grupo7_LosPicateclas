@@ -657,15 +657,14 @@ img {vertical-align: middle;}
     @media(min-width: 768px){
     
     /*HEADER DE LA PÁGINA HOME*/ 
-    
-         /*ELEMENTOS QUE NO TIENEN QUE APARECER A PARTIR DE ESTA RESOLUCIÓN!*/
-        header{
-            border-bottom: none;
+    header{
             position:fixed;
             width: 100%;
             padding: 0;
            
-        }    
+        }   
+         /*ELEMENTOS QUE NO TIENEN QUE APARECER A PARTIR DE ESTA RESOLUCIÓN!*/
+         
         
         .burger-menu{
             display: none;
@@ -673,6 +672,10 @@ img {vertical-align: middle;}
         /*ELEMENTOS QUE SÍ TIENEN QUE APARECER A PARTIR DE ESTA RESOLUCIÓN!*/
         .nav-bar{
          display: flex;
+         padding: 1%;
+         position: fixed;
+         top: 68px;
+         width: 100%;
          
         }
          .ContenedorBuscador{
@@ -718,6 +721,8 @@ img {vertical-align: middle;}
 
 
 /*-----------INICIO DEL <MAIN> DE LA PÁGINA HOME---------------*/ 
+
+
 .bloque-filtros-productos{
     display: flex;
     flex-direction: row;
@@ -751,7 +756,7 @@ img {vertical-align: middle;}
         margin-left: 2%;
         margin-right: 2%;
     } 
-/*----------------SECCIÓN PRODUCTOS PAG HOME--*/
+
    
         .articulosR{
             /*border: lightgreen 2px solid;*/
@@ -826,17 +831,6 @@ section.producto-detalle {
     align-items: unset;
     padding: 1%;
 }
-.bloque-carrusel{
-    margin-top: 135px;
-    }
-
-/*-------MAIN DETALLE DE PRODUCTO----------*/
-
-.producto-detalle {
-    margin-top: 150px;
-}
-       
-/*AUMENTANDO EL TAMAÑO DEL LOGO*/
         .topMenu img{
             width: 150px;        
         }
@@ -874,8 +868,9 @@ section.producto-detalle {
             text-align: justify;
         }
         
-/*----------------SECCIÓN PRODUCTOS PAG HOME--*/
- /*.productosR{
+/*----------------MAIN DE LA PÁGINA HOME-----------------------*/
+
+/*.productosR{
     border: 2px red solid;
     }*/
             
@@ -915,6 +910,12 @@ section.producto-detalle {
             width: 100%;
             /*border: #A17C46 2px solid;*/
            }
-                
+          
+           
+    /*-------MAIN DETALLE DE PRODUCTO----------*/
+
+.producto-detalle {
+    margin-top: 150px;
+}       
     }    
     

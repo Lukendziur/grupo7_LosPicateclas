@@ -19,7 +19,7 @@ header{
     margin: auto;
     background-color: white;
     width: 100%;
-    position: fixed;
+    
 } 
     .topMenu img{
         width: 100px;
@@ -586,7 +586,9 @@ img {vertical-align: middle;}
 @media(min-width: 361px){
 
     /*HEADER DE LA PÁGINA HOME*/    
-       
+     .topMenu{
+         position: relative;
+     }  
 
       
         /*BUSCADOR QUERIE 361PX*/

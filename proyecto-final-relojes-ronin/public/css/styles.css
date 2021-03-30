@@ -402,7 +402,7 @@ font-size: 25px;
     
 }
 .boton-login-interno{
-
+font-size: 30px;
 padding: 10px;
 background-color: #7DB9B3;
 color: black
@@ -412,6 +412,32 @@ color: black
  /*-------------------------------------------------------------------------------------*/
 
 /*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE REGISTER*/
+.main-del-register{
+    margin-top: 100px;
+    align-items: center;
+    flex-flow: column;
+    display: flex;
+    text-align: center;
+}
+.datos-del-register{
+    padding: 15px;
+    margin: 20px 0px;
+    font-size: 25px;
+    width: 100%;
+}
+.titulo-el-register{
+    font-size: 19px;
+}
+.datos-del-register-especificos{
+    border: solid 1px black;
+background-color: #c4c4c4;
+}
+.boton-register-interno{
+    background-color: #7DB9B3;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+}
 
  /*-------------------------------------------------------------------------------------*/
 
@@ -943,5 +969,30 @@ section.producto-detalle {
 .producto-detalle {
     margin-top: 150px;
 }       
+
+
+
+
+
+
+
+
+
+
+
+/*media del register*/
+
+.main-del-register{
+    margin-top: 120px;
+}
+.titulo-el-register{
+    font-size: 30px ;
+}
+
+
+
+
+
+
     }    
     

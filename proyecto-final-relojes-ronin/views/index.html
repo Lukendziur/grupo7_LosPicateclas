@@ -37,7 +37,7 @@
     <section>
         <nav class="nav-bar">
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="#">Colecciones</a></li>
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="/FAQ">Preguntas frecuentes</a></li>
@@ -63,13 +63,65 @@
     <section class="bloque-filtros-productos">
         
         <div class="filtrosR">
-            <p>filtros</p>   
-
+            <form action="/filtroRelojes" method="POST" class="filtroRelojes">
+                    
+                <div class="precioR">
+                    <h4>Precio</h4>
                 </div>
+                <div class="marcaR">
+                    <h4>Marca</h4>
+                    
+                    <label for="a" class="marcaR">
+                        <input type="checkbox" name="marca" value="Rolex" id="a">
+                    Rolex
+                    </label>                
+                    <label for="b" class="marcaR">
+                        <input type="checkbox" name="marca" value="Bulova" id="b">
+                    Bulova
+                    </label>
+                    <label for="c" class="marcaR">
+                        <input type="checkbox" name="marca" value="Tommy" id="c">
+                    Tommy
+                    </label>
+                    <label for="d" class="marcaR">
+                        <input type="checkbox" name="marca" value="Fahren" id="d">
+                    Fahren
+                    </label>
+                </div>   
 
+                <div class="colorR">   
+                    <h4>Color</h4>
+                       
+                    <label for="1" class="colorR">
+                        <input type="checkbox" name="color" value="Gold" id="1">
+                    Gold
+                    </label>                
+                    <label for="2" class="colorR">
+                        <input type="checkbox" name="color" value="Blanco" id="2">
+                   Blanco
+                    </label>
+                    <label for="3" class="colorR">
+                        <input type="checkbox" name="color" value="Negro" id="3">
+                    Negro                    </label>
+                    <label for="4" class="colorR">
+                        <input type="checkbox" name="color" value="Pink" id="4">
+                    Pink
+                    </label>
+                </div> 
 
-
-            </form>
+                <div class="tipoR">
+                    <h4>Tipo</h4>
+                       
+                    <label for="1a" class="tipoR">
+                        <input type="checkbox" name="tipo" value="Analógico" id="1a">
+                    Analógico
+                    </label>                
+                    <label for="1b" class="colorR">
+                        <input type="checkbox" name="tipo" value="Digital" id="1b">
+                   Digital
+                    </label>
+                </div>  
+                </form>
 
         </div>
         

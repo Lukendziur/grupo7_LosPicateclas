@@ -95,6 +95,13 @@ header{
         display: inline-block;
         margin: 0 8px;
     }
+
+    .nav-bar a:hover  {
+        color: darkgreen;
+        font-weight: bold;
+        transition: all 500ms;
+        
+    }
     
 /*-----------INICIO DEL FOOTER DE LA PÁGINA HOME---------------*/ 
 
@@ -424,6 +431,7 @@ section.producto-detalle h4 {
 }
 
 article.contenedor-fotos {
+    z-index: -1;
     border: green 3px solid;
 }
 
@@ -464,16 +472,17 @@ article.descripción-producto button.add, article.descripción-producto button.s
 
 article.descripción-producto button.add:hover, article.descripción-producto button.share:hover {
     background-color: rgb(0, 56, 9);
-    border: rgb(0, 56, 9);
+    border: rgb(0, 129, 22);
     color: white;
-    padding: 30%;
-    font-size: 1.5rem;
+    padding: 3%;
+    font-size: 1.1rem;
 }
 
 .productos-similares {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: -1;
     border: coral 3px solid;
 }
 

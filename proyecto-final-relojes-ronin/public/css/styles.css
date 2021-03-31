@@ -380,29 +380,71 @@ footer {
     text-align: center;
     align-items: center;
     display: flex;
+    margin-top: 80px;
   
    flex-flow: column;
+}
+.datos-del-login-mas-especificos{
+border: solid 1px black;
+background-color: #c4c4c4;
 }
 .cajon-principal-del-login{
      margin: 20px 10px;
 }
 .datosDelLogin{
-margin: 15px;
+margin: 25px 0px;
 padding: 5px;
 width:100%;
+font-size: 25px;
 }
 .caraDelLogin{
-    display: flex;
+    font-size: 15px;
     flex-flow: row;
     position: relative;
-    left: 12px;
 
+}
+.boton-del-login{
+    
+    font-size: 30px;
+    
+}
+.boton-login-interno{
+font-size: 30px;
+padding: 10px;
+background-color: #7DB9B3;
+color: black
 }
 
 
  /*-------------------------------------------------------------------------------------*/
 
 /*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE REGISTER*/
+.main-del-register{
+    margin-top: 100px;
+    align-items: center;
+    flex-flow: column;
+    display: flex;
+    text-align: center;
+}
+.datos-del-register{
+    padding: 15px;
+    margin: 20px 0px;
+    font-size: 25px;
+    width: 100%;
+}
+.titulo-el-register{
+    font-size: 19px;
+}
+.datos-del-register-especificos{
+    border: solid 1px black;
+background-color: #c4c4c4;
+}
+.boton-register-interno{
+    background-color: #7DB9B3;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+}
 
  /*-------------------------------------------------------------------------------------*/
 
@@ -827,6 +869,14 @@ img {vertical-align: middle;}
     border: coral 3px solid;
 }
 
+/*section.producto-detalle {
+    margin-top: 130px;
+}*/
+ /*media cuerri del login*/
+ .caraDelLogin{
+                
+    font-size: 35px;
+}
 section.producto-detalle {
     margin-top: 140px;
 }
@@ -921,10 +971,37 @@ section.producto-detalle {
            }
           
            
+
+           
     /*-------MAIN DETALLE DE PRODUCTO----------*/
 
 .producto-detalle {
     margin-top: 150px;
 }       
+
+
+
+
+
+
+
+
+
+
+
+/*media del register*/
+
+.main-del-register{
+    margin-top: 120px;
+}
+.titulo-el-register{
+    font-size: 30px ;
+}
+
+
+
+
+
+
     }    
     

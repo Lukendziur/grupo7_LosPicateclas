@@ -11,11 +11,221 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <title>Registro</title>
+    <title>Login</title>
 </head>
 
 <body>
+    <header>
+        <section class="topMenu">
+            <img src="/images/Logo-Ronin.png" alt="Logo Ronin">
+    
+            <div class="contenedorIconos">
+    
+                <div class="ContenedorBuscador">
+                    <form class="buscador" action="action_page.php">
+                        <input type="text" placeholder="Buscar" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <a href="/Carrito-compras"><i class="fas fa-shopping-cart"></i></a>
+                <a href="/login"><i class="fas fa-user-circle"></i></a>
+                <div class="burger-menu"><i class="fa fa-bars burger"></i>
+                </div>
+        </section>
+        <section>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Colecciones</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="/FAQ">Preguntas frecuentes</a></li>
+                </ul>
+            </nav>
+        </section>
+    
+    </header>
+
+
+<main class="main-del-register">
+    <div class="crear-cuenta-register">
+        <div class="titulo-el-register">
+
+    <h1>Crear cuenta</h1>
+</div>
+<div class="formulario-del-register">
+    <form action="" method="POST">
+        <div class="datos-del-register">
+            <div class="label-del-register">
+        <label for= "nombre">Nombre del usuario</label>
+        </div>
+        <input class="datos-del-register-especificos" type="text" name="nombre del ususario" id="nombre" placeholder="Su nombre" required>
+</div>
+<div class="datos-del-register">
+    <div class="label-del-register">
+        <label for="su-apellido">Apellido del usuario</label>
+        </div>
+        <input class="datos-del-register-especificos" type="text" name= "apellido del usuario" id="su-apellido" placeholder="Su apellido" required >
+</div>
+<div class="datos-del-register">
+    <div class="label-del-register">
+        <label for="su-email">Email del usuario</label>
+    </div>
+        <input class="datos-del-register-especificos" type="email" name="email" id="su-email" placeholder="Su email" required>
+</div>
+<div class="datos-del-register">
+    <div class="label-del-register">
+        <label for="su-telefono">Numero telefonico del usuario</label>
+    </div>
+        <input class="datos-del-register-especificos" type="tel" name="telfono del usuario" id="su-telfeono" placeholder="+54 11 2273-0459" >
+</div>
+<div class="datos-del-register">
+    <div class="label-del-register">
+        <label for="contraseña">Contraseña del usuario</label>
+    </div>
+        <input class="datos-del-register-especificos" type="password" name="contraseña del usuario" id="contraseña" placeholder="Su contraseña" required>
+</div>
+<div class="datos-del-register">
+    <div class="label-del-register">
+        <label for="confirmacion de contraseña">Confirme su contraseña</label>
+    </div>
+        <input class="datos-del-register-especificos" type="password" name="confirmacion de contraseña" id="confirmacion de contraseña"  required>
+</div>
+<div class="datos-del-register">
+
+        <button class="boton-register-interno" type="submit" >Crear cuenta</button>
+
+</div>
+
+
+
+
+    </form>
+    <div class="datos-del-register">
+    <a  href="/login">¿Ya tiene cuenta?</a>
+</div>
+</div>
+
+
+
+
+</div>
+
+    </main>
+
+    <footer>
+
+        <section class="section1">
+    
+            <div class="FAQ">
+            <h2>Atención al cliente</h2>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Envíos y retiros</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Cambios y devoluciones</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <div class="mail">
+                <p>inforonin@gmail.com</p>
+                <br>
+                <p>011-345081915</p>
+            </div>
+            <div class="iconosSociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+        <div class="mediosDePago">
+            <h2>Medios de pago</h2>
+            <div class="ahora12">
+                <p>Ahora 12 y Ahora 18</p>
+            </div>
+        <div class="iconosPago">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+        </div>
+        </div>
+    </section>    
+    
+    <section class="section2"> 
+        <div class="derechosR">
+            <p>© 2021 R o n i n</p>
+        </div>
+    
+    </section> 
+    </footer>
+
 
 </body>
 
 </html>
+
+
+/////////////<form action="" method="POST">
+<div class="formulario-de-facturacion">
+
+    <div class="datos-de-factutracion">
+        <div class="titulos">
+        <label for="nombre">Nombre</label>
+    </div>
+    <input type="text" name="nombre" id="nombre" required>
+    <div class="titulos">
+        <label for="apellido">Apellido</label>
+    </div>
+    <input type="text" name="apellido" id="apellido" required>
+    </div>
+
+    <div class="datos-de-factutracion">
+        <div class="titulos">
+        <label for="direccion">Direccion</label>
+        </div>
+        <input type="text" name="direccion" id="direccion" required>
+        <div class="titulos">
+            <label for="localidad">Localidad</label>
+        </div>
+        <input type="text" name="localidad" id="localidad" required>
+    </div>
+    <div class="datos-de-factutracion">
+        <div class="titulos">
+            <label for="provincia">Provincia</label>
+        </div>
+        <input type="text" name="provincia" id="provincia" required>
+
+        <div class="titulos">
+            <label for="codigo postal">Codigo postal</label>
+        </div>
+        <input type="text" name="codigo postal" id="codigo postal">
+
+    </div>
+    <div class="datos-de-factutracion">
+        <div class="titulos">
+            <label for="telefono">Telefono</label>
+        </div>
+        <input type="tel" name="numero de telefono" id="telefono">
+
+        <div class="titulos">
+            <label for="email">Email</label>
+        </div>
+        <input type="email" name="email" id="email">
+
+    </div>
+    <div class="datos-de-factutracion">
+        <div class="titulos">
+        <label for="dni">DNI</label>
+    </div>
+    <input type="number" name="dni" id="dni">
+    </div>
+
+</div>
+</form>
+
+
+
+
+

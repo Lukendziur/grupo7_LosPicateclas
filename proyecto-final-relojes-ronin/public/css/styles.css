@@ -250,6 +250,7 @@ footer {
     border-radius: 5px;
     margin-bottom: 3%;
     color: #12784A;
+    background-color: white;
 }
     
    
@@ -262,21 +263,46 @@ footer {
     
     
 }   
+    .precioR input[type=tel]{
+        border: none;
+        background-color: white;
+        border-radius: 3px;
+        margin-top: 5px;
+        margin-bottom: 5px;  
+        width: 100%;  
+    }
+    label.preciosR{
+        color:#383D3D;
+        font-weight: 500;
+            
+    }
     .filtrosR{
         background-color: lightgray;
         border-radius: 5px;
         width: 100%;
-        height: 200px;
-        
+               
     }
+        .filtroRelojes{
+            padding: 10px;
+        }
         .filtrosR h4{
             color:#383D3D;
-            font-size: 18;
+            font-size: 18px;
+            margin: 10px 0px 5px 0px;
         }
 
         .marcaR, .colorR, .tipoR{
             color:#383D3D;
             display: inline-block;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        .filtrosR input[type=checkbox]{
+            vertical-align: middle;
+            
+            bottom: 1px;
+            
         }
                
 
@@ -829,6 +855,11 @@ img {vertical-align: middle;}
         height: auto;
         border-right: lightgray 2px solid;        
     }
+        .marcaR, .colorR, .tipoR{
+            display:block;
+            margin-top: 12px;
+            margin-right: auto;
+        }
 
     .productosR{
         width: 100%;

@@ -585,10 +585,9 @@ article.descripción-producto button.add, article.descripción-producto button.f
 }
 
 article.descripción-producto button.add:hover, article.descripción-producto button.favorite:hover, article.descripción-producto button.share:hover {
-    background-color: rgb(0, 56, 9);
-    border: rgb(0, 129, 22);
+    background-color: #12784A;
+    border: #12784A solid 2px;
     color: white;
-    font-size: 1.1rem;
 }
 
 .productos-similares {

@@ -500,7 +500,6 @@ section.producto-detalle {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: red 3px solid;
     margin-top: 51px;
 }
 
@@ -510,11 +509,10 @@ section.producto-detalle h4 {
 
 article.contenedor-fotos {
     z-index: -1;
-    border: green 3px solid;
 }
 
 .cantidades {
-    border: blue 3px solid;
+    border: gray 1px solid;
 }
 
 .cantidadProducto {
@@ -523,17 +521,29 @@ article.contenedor-fotos {
     align-items: center;
 }
 
+.cantidadProducto label {
+    font-weight: bold;
+}
+
 .cantidadCuotas {
     justify-content: space-around;
     display: flex;
     align-items: center;
 }
 
-article.descripción-producto {
-    border: yellow 3px solid;
+.cantidadCuotas label {
+    font-weight: bold;
 }
 
-article.descripción-producto button.add, article.descripción-producto button.share {
+.descripción-artículo p {
+    display: flex;
+}
+
+.componentes-artículo p {
+    display: block;
+}
+
+article.descripción-producto button.add, article.descripción-producto button.favorite, article.descripción-producto button.share {
     margin: auto;
     display: flex;
     margin-top: 4%;
@@ -548,11 +558,10 @@ article.descripción-producto button.add, article.descripción-producto button.s
     transition: all 450ms;
 }
 
-article.descripción-producto button.add:hover, article.descripción-producto button.share:hover {
+article.descripción-producto button.add:hover, article.descripción-producto button.favorite:hover, article.descripción-producto button.share:hover {
     background-color: rgb(0, 56, 9);
     border: rgb(0, 129, 22);
     color: white;
-    padding: 3%;
     font-size: 1.1rem;
 }
 
@@ -561,11 +570,9 @@ article.descripción-producto button.add:hover, article.descripción-producto bu
     flex-direction: column;
     justify-content: space-between;
     z-index: -1;
-    border: coral 3px solid;
 }
 
 .producto-similar1,  .producto-similar2, .producto-similar3, .producto-similar4 {
-    border: palevioletred 2px solid;
     position: relative;
 }
 
@@ -598,12 +605,8 @@ article.descripción-producto button.add:hover, article.descripción-producto bu
 
 .producto-similar1:hover div.precio-producto, .producto-similar2:hover div.precio-producto, .producto-similar3:hover div.precio-producto, .producto-similar4:hover div.precio-producto, .producto-similar1:hover div.nombre-producto, .producto-similar2:hover div.nombre-producto, .producto-similar3:hover div.nombre-producto, .producto-similar4:hover div.nombre-producto{
     opacity: 1;
-}
-
-/*.producto-similar1, .producto-similar2, .producto-similar3, .producto-similar4 {
-    border: rgb(235, 230, 230) 1px double;
     box-shadow : 0px 0px 3px rgb(100, 100, 100 );
-}*/
+}
 
 /*Carrousel de imagenes*/
 
@@ -908,14 +911,8 @@ img {vertical-align: middle;}
 
 .productos-similares {
     display: flex;
-    border: turquoise 3px solid;
-}
-
-.productos-similares {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: coral 3px solid;
 }
 
 /*section.producto-detalle {
@@ -928,6 +925,10 @@ img {vertical-align: middle;}
 }
 section.producto-detalle {
     margin-top: 140px;
+}
+
+.descripción-producto {
+    width: 45%;
 }
 
 
@@ -1026,7 +1027,7 @@ section.producto-detalle {
 
 .producto-detalle {
     margin-top: 150px;
-}       
+}      
 
 
 

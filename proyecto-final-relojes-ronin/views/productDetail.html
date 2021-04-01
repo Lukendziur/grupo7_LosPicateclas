@@ -19,9 +19,9 @@
     <header>
         <section class="topMenu">
             <img src="/images/Logo-Ronin.png" alt="Logo Ronin">
-    
+
             <div class="contenedorIconos">
-    
+
                 <div class="ContenedorBuscador">
                     <form class="buscador" action="action_page.php">
                         <input type="text" placeholder="Buscar" name="search">
@@ -43,21 +43,21 @@
                 </ul>
             </nav>
         </section>
-    
+
     </header>
 
     <main>
         <section class="producto-detalle">
             <section class="contenedor-detalle-producto">
-            <article class="contenedor-fotos">
-                <div class="contenedor-carrousel">
-                    <div class="diapositivas fade">
-                        <div class="numero">1/3</div>
-                        <img src="/images/Reloj1.jpg" style="width: 100%">
-                        <div class="nombre-producto">Reloj1</div>
-                        <div class="precio-producto">$1000</div>
-                    </div>
-                    <!--
+                <article class="contenedor-fotos">
+                    <div class="contenedor-carrousel">
+                        <div class="diapositivas fade">
+                            <div class="numero">1/3</div>
+                            <img src="/images/Reloj1.jpg" style="width: 100%">
+                            <div class="nombre-producto">Reloj1</div>
+                            <div class="precio-producto">$1000</div>
+                        </div>
+                        <!--
                 <div class="diapositivas fade">
                     <div class="numero">2/3</div>
                     <img src="/images/Reloj2.jpg" style="width: 100%">
@@ -75,81 +75,93 @@
             </div>
             <br>
             -->
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="descripción-producto">
-                <div class="cantidades">
-                    <div class="cantidadProducto">
-                    <label for="unidades">Cantidad de unidades</label>
-                    <input type="number" name="unidades" id="unidades">
-                </div>
-                    <br>
-                <div class="cantidadCuotas">
-                    <label for="cuotas">Cantidad de cuotas</label>
-                    <select id="cuotas">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="6">6</option>
-                        <option value="9">9</option>
-                        <option value="12">12</option>
-                        <option value="18">18</option>
-                      </select>
+                </article>
+                <article class="descripción-producto">
+                    <div class="cantidades">
+                        <div class="cantidadProducto">
+                            <label for="unidades">Cantidad de unidades</label>
+                            <input type="number" name="unidades" id="unidades">
+                        </div>
+                        <br>
+                        <div class="cantidadCuotas">
+                            <label for="cuotas">Cantidad de cuotas</label>
+                            <select id="cuotas">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                                <option value="18">18</option>
+                            </select>
+                        </div>
+                        <br>
                     </div>
-                    <br>
-                </div>
-                <div class="Descripción del artículo">
-                    <h4>Descripción del artículo</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam exercitationem et possimus
-                            voluptates id. Libero ex dicta id quo placeat, quas quaerat, aliquid illum velit iure vel
-                            quibusdam laborum.</p>
-                </div>
-                <div class="Componentes del artículo">
-                    <h4>Componentes del artículo</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum nihil, recusandae
-                            voluptatum
-                            quaerat voluptate reiciendis ratione hic ea veniam laboriosam provident illo ex, mollitia
-                            dignissimos sed nesciunt modi officia!</p>
-                </div>
-                <form action="/Carrito-compras" method="GET">
-                    <label for="agregar" method="#"></label>
-                    <button class="add" type="submit">Agregar a carrito</button>
-                </form>
-                <form action="/" method="GET">
-                    <label for="compartir" method="#"></label>
-                    <button class="share" type="submit">Compartir producto</button>
-                </form>
-            </article>
+                    <div class="descripción-artículo">
+                        <h4>Descripción del artículo</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam exercitationem et
+                                possimus
+                                voluptates id. Libero ex dicta id quo placeat, quas quaerat, aliquid illum velit iure
+                                vel
+                                quibusdam laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic
+                                deserunt voluptatibus id quam porro, facere esse odit voluptatem quasi, minima
+                                aspernatur aliquam! Nulla perferendis, molestias distinctio consequatur reprehenderit
+                                nam?
+                            </p>
+                    </div>
+                    <div class="componentes-artículo">
+                        <h4>Componentes del artículo</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum nihil,
+                                recusandae
+                                voluptatum
+                                quaerat voluptate reiciendis ratione hic ea veniam laboriosam provident illo ex,
+                                mollitia
+                                dignissimos sed nesciunt modi officia!</p>
+                    </div>
+                    <form action="/Carrito-compras" method="GET">
+                        <label for="agregar" method="#"></label>
+                        <button class="add" type="submit">Agregar a carrito</button>
+                    </form>
+                    <form action="/" method="GET">
+                        <label for="favorito" method="#"></label>
+                        <button class="favorite" type="submit">Agregar a favorito</button>
+                    </form>
+                    <form action="/" method="GET">
+                        <label for="compartir" method="#"></label>
+                        <button class="share" type="submit">Compartir producto</button>
+                    </form>
+                </article>
             </section>
-            <div class="contenedor-productos-similares">         
+            <div class="contenedor-productos-similares">
                 <h4>Productos similares</h4>
                 <article class="productos-similares">
-                <div class="producto-similar1">
-                    <img src="/images/Reloj5.jpg" style="width: 100%">
-                    <div class="nombre-producto">Reloj5</div>
-                    <div class="precio-producto">$1000</div>
-                </div>
-                <div class="producto-similar2">
-                    <img src="/images/Reloj6.jpg" style="width: 100%">
-                    <div class="nombre-producto">Reloj6</div>
-                    <div class="precio-producto">$1000</div>
-                </div>
-                <div class="producto-similar3">
-                    <img src="/images/Reloj8.jpg" style="width: 100%">
-                    <div class="nombre-producto">Reloj8</div>
-                    <div class="precio-producto">$1000</div>
-                </div>
-                <div class="producto-similar4">
-                    <img src="/images/Reloj4.jpg" style="width: 100%">
-                    <div class="nombre-producto">Reloj4</div>
-                    <div class="precio-producto">$1000</div>
-                </div>
-            </div> 
+                    <div class="producto-similar1">
+                        <img src="/images/Reloj5.jpg" style="width: 100%">
+                        <div class="nombre-producto">Reloj5</div>
+                        <div class="precio-producto">$1000</div>
+                    </div>
+                    <div class="producto-similar2">
+                        <img src="/images/Reloj6.jpg" style="width: 100%">
+                        <div class="nombre-producto">Reloj6</div>
+                        <div class="precio-producto">$1000</div>
+                    </div>
+                    <div class="producto-similar3">
+                        <img src="/images/Reloj8.jpg" style="width: 100%">
+                        <div class="nombre-producto">Reloj8</div>
+                        <div class="precio-producto">$1000</div>
+                    </div>
+                    <div class="producto-similar4">
+                        <img src="/images/Reloj4.jpg" style="width: 100%">
+                        <div class="nombre-producto">Reloj4</div>
+                        <div class="precio-producto">$1000</div>
+                    </div>
+            </div>
             </article>
         </section>
 

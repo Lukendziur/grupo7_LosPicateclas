@@ -517,6 +517,7 @@ section.producto-detalle div {
     margin: auto;
     margin-top: 3%;
     margin-bottom: 3%;
+    justify-content: space-between;
 }
 
 
@@ -533,12 +534,24 @@ section.producto-detalle h4 {
     margin: 5px 0 5px 0;
 }
 
-article.contenedor-fotos {
-    z-index: -1;
+div.contenedor-productos-similares h4 {
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 1rem;
 }
 
-.cantidades {
-    border: gray 1px solid;
+article.contenedor-fotos {
+    z-index: -0.5;
+}
+
+article.contenedor-fotos img {
+    width: 100%;
+}
+
+article.contenedor-fotos div.nombre-producto, article.contenedor-fotos div.precio-producto {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .cantidadProducto {
@@ -549,6 +562,10 @@ article.contenedor-fotos {
 
 .cantidadProducto label {
     font-weight: bold;
+}
+
+input#unidades {
+    width: 50px;
 }
 
 .cantidadCuotas {
@@ -938,6 +955,8 @@ img {vertical-align: middle;}
 
 .contenedor-detalle-producto {
     display: flex;
+    margin: auto;
+    justify-content: center;
 }
 
 .productos-similares {
@@ -960,6 +979,18 @@ section.producto-detalle {
 
 .descripción-producto {
     width: 45%;
+}
+
+article.contenedor-fotos img {
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.6s ease-in-out;
+}
+
+article.contenedor-fotos img:hover {
+    border-radius: 40%;
+    border: lightgray 1px solid;
+    transform: scale(1.5);
 }
 
 

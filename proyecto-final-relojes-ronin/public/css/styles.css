@@ -321,9 +321,9 @@ footer {
 
         }
             .articulosR img{
-                width: 100%;
-                
+                width: 100%;                
             }
+            
             .detallesProductosR{
                 display: flex;
                 flex-direction:row;

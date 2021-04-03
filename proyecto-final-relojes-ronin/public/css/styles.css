@@ -410,6 +410,68 @@ footer {
 
 /*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE COMPRAS*/
 
+.imagen-en-carrito {
+    width: 100%;
+}
+
+.contenedor-producto-agregado {
+    margin-top: 53px;
+}
+
+.cantidad-producto {
+    display: flex;
+    align-items: center;
+}
+
+div.cantidad-producto {
+    padding: 4% 0 2% 6%
+}
+
+div.subtotal {
+    padding: 0 0 0 6%
+}
+
+.subtotal input {
+    border: #d3d3d3 1px solid;
+    background-color: #d3d3d3;
+    height: 25px;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+label.titulo-subtotal {
+    margin-right: 15px;
+}
+
+.cantidad-producto label {
+    margin-right: 15px;
+}
+
+.otros-datos {
+    padding: 15px;
+    width: 100%;
+}
+
+section.otros-datos h4 {
+    margin: 10px 0 10px 0;
+}
+
+.otros-datos input {
+    border: #d3d3d3 1px solid;
+    background-color: #d3d3d3;
+    height: 25px;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.otros-datos form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 
  /*-------------------------------------------------------------------------------------*/
 

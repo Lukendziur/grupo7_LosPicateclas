@@ -44,63 +44,75 @@
         </section>
 
     </header>
-    <main>
-        <section class="contenedor-producto-agregado">
-            <article class="contenedor-producto-cantidad">
-                <div class="imagen-en-carrito">
-                    <img src="/images/Reloj2.jpg" style="width: 100%">
-                </div>
-                <div class="contenedor-carrito-compra">
-                    <div class="nombre-producto">
-                        <h4>Producto: Reloj2</h4>
-                    </div>
-                    <div class="cantidad-producto">
-                        <label for="unidades">Cantidad</label>
-                        <input type="number" name="unidades" id="unidades">
-                    </div>
-                </div>
-            </article>
+<main class="carrito-main">
+    <section class="contenedor-producto-agregado">
+        <div class="mini-banner">
+            <p>Reloj "Tokio" ha sido añadido a tu carrito con éxito</p>
+           <a href="/">
+            <button class="but-seguir-comprando">Seguir comprando</button>
+        </a>
+        </div>
+
+        <article class="contenedor-producto-cantidad">
+            <img src="/images/Reloj2.jpg">
+                
+        <div class="contenedorProducto-cantidad">            
+            <div class="nombre-productoC">
+                <h4>Producto: Reloj Tokio</h4>
+            </div>
+            <div class="cantidad-productoC">
+                <label for="cantidad-productoC">Cantidad:</label>
+                <input type="number" name="unidades" id="unidades">
+            </div>
+
             <div class="subtotal">
                 <label class="titulo-subtotal">Subtotal:</label>
                 <input type="text" name="subtotal">
             </div>
-        </section>
-        <section class="otros-datos">
-            <article class="cupón">
-                <div>
-                    <h4>¿Tienes un cupón de descuento?</h4>
-                    <input required type="text" placeholder="Código del cupón" name="cupón" id="cupón">
-                </div>
-                <div class="boton-aplicar-cupon">
-                    <button type="submit">Aplicar cupón</button>
-                </div>
-            </article>
-            <article class="seleccionar-envío">
+        </div>            
+        </article>
 
-                <h4>Seleccionar envío</h4>
-                <form>
-                        <label for="envío">Retiro por sucursal</label>
-                        <input type="radio" name="tipo-envío">
-                        <label for="envío">Envío a correo</label>
-                        <input type="radio" name="tipo-envío">
-                        <label for="envío">Envío a domicilio</label>
-                        <input type="radio" name="tipo-envío">
-                        <input type="código-postal" placeholder="Código postal">
-                </form>
-            </article>
-            <article class="finalizar-compra">
-                <div class="total">
-                    <label class="titulo-total">Total:</label>
-                    <input type="text" name="total">
-                </div>
-                <form action="/Facturacion" method="GET">
-                    <label for="comprar" method="/Facturacion"></label>
-                    <button class="realizar-compra" type="submit">Realizar compra</button>
-                </form>
 
-            </article>
-        </section>
-    </main>
+        
+    </section>
+    <section class="otros-datos">
+        <article class="cupón">
+            <div>
+                <h4>¿Tienes un cupón de descuento?</h4>
+                <input required type="text" placeholder="Código del cupón" name="cupón" id="cupón">
+            </div>
+            <div class="boton-aplicar-cupon">
+                <button type="submit">Aplicar cupón</button>
+            </div>
+        </article>
+        <article class="seleccionar-envío">
+            <h4>Seleccionar envío</h4>
+            <form>
+                <label for="envío">Retiro por sucursal</label>
+                    <input type="radio" name="tipo-envío">
+                    <label for="envío">Envío a correo</label>
+                    <input type="radio" name="tipo-envío">
+                    <label for="envío">Envío a domicilio</label>
+                    <input type="radio" name="tipo-envío">
+                    <input type="código-postal" placeholder="Código postal">
+            </form>
+        </article>
+        <article class="finalizar-compra">
+            <div class="total">
+                <label class="titulo-total">Total:</label>
+                <input type="text" name="total">
+            </div>
+            <form action="/Facturacion" method="GET">
+                <label for="comprar" method="/Facturacion"></label>
+                <button class="realizar-compra" type="submit">Realizar compra</button>
+            </form>
+
+        </article>
+    </section>
+
+</main>
+
+
     <footer>
 
         <section class="section1">

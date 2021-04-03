@@ -532,7 +532,6 @@ background-color: #c4c4c4;
 section.producto-detalle div {
     margin: 4%;
     margin: auto;
-    margin-top: 3%;
     justify-content: start;
 }
 
@@ -546,7 +545,7 @@ section.producto-detalle {
 }
 
 section.producto-detalle h4 {
-    margin: 5px 0 5px 0;
+    margin: 15px 0 15px 0;
 }
 
 div.contenedor-productos-similares h4 {
@@ -557,7 +556,8 @@ div.contenedor-productos-similares h4 {
 }
 
 article.contenedor-fotos {
-    z-index: -0.5;
+    margin-bottom: 10%;
+    z-index: 0;
 }
 
 article.contenedor-fotos img {
@@ -582,6 +582,42 @@ article.contenedor-fotos div.nombre-producto, article.contenedor-fotos div.preci
 
 input#unidades {
     width: 50px;
+}
+
+.contenedor-slide {
+    width: 50%;
+}
+
+.slider {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%; 
+    height: 25px; 
+    background-color: #d3d3d3; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: 0.2s; 
+    transition: opacity 0.2s;
+    border-radius: 10px;
+  }
+  
+  .slider:hover {
+    opacity: 1; 
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: #12784A; 
+    cursor: pointer; 
+    border-radius: 50%;
+  }
+
+select#cuotas {
+    border-radius: 7px;
+    border: lightgray 3px solid;
 }
 
 .cantidadCuotas {
@@ -618,6 +654,9 @@ div.cantidades {
 
 .contendor-descripciones {
     padding-left: 25px;
+    background-color: lightgray;
+    border-radius: 7px;
+    border: 7px solid lightgray;
 }
 
 article.descripción-producto button.add, article.descripción-producto button.favorite, article.descripción-producto button.share {
@@ -645,7 +684,7 @@ article.descripción-producto button.add:hover, article.descripción-producto bu
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: -1;
+    z-index: 0;
 }
 
 .producto-similar1,  .producto-similar2, .producto-similar3, .producto-similar4 {
@@ -1046,9 +1085,10 @@ article.contenedor-fotos img {
 }
 
 article.contenedor-fotos img:hover {
-    border-radius: 40%;
-    border: lightgray 1px solid;
+    border-radius: 50%;
+    /*border: lightgray 1px solid;*/
     transform: scale(1.5);
+    z-index: 0;
 }
 
 

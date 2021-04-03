@@ -442,51 +442,154 @@ footer {
 
 .carrito-main{
     padding: 10px;
-    border: blueviolet 4px solid;
-    margin-top: 150px;
+   /* border: blueviolet 4px solid;*/
+    margin-top: 70px;
 }
     .mini-banner{
-        border: 5px solid red;
-        display: flex;
+        /*border: 5px solid red;*/
+        background-color: #12784A;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        color:white;
+        text-align: center;
     }
-        .mini-banner a{
-            text-decoration: none;
-            color: white
-        }
-        .but-seguir-comprando{
+        .seguir-comprando a{
+            text-decoration: none;   
+            transition: all 420ms;
             
         }
+        .seguir-comprando a:hover{
+            text-decoration: underline;
+            color:#12784A;
+        }
+
+        p.seguirC{            
+            color: #383D3D;
+            font-size: 18px;
+            text-align: right;
+            margin-bottom:5px;
+            margin-bottom: 15px; 
+            transition: all 420ms;
+        }
+      
+        .seguirC i{
+            margin-left:2px;
+            
+        }
+        .seguirC:hover{
+            color:#12784A;
+        }
+
+        
+        
+        
 
     .contenedor-producto-cantidad{
         display: flex;
         width: 100%;
-        border: blue solid 2px;
+       /* border: blue solid 2px;*/
         flex-direction: row;
         
     }  
+        .contenedor-producto-cantidad label{
+            color:#383D3D;
+            font-weight: 600;
+        }
         .contenedor-producto-cantidad img{
             width: 150px;
-            border: violet 2px solid;
+            /*border: violet 2px solid;*/
         }         
         
         .nombre-productoC{
-            border: yellow solid 2px;
-            margin-bottom: 10px;
-            
+         /*   border: yellow solid 2px;*/
+            margin-bottom: 10px;            
         }
+            .nombre-productoC h4{
+                color:#383D3D;
+            }
         .cantidad-productoC{
-            border:yellowgreen 2px solid;           
+           /* border:yellowgreen 2px solid; */          
             
         }
 
         .subtotal{
             margin-top: 10px;
+            
         }
         .subtotal input{
             width: 30%;
+            border-radius: 4px;
+            border: solid 2px #d3d3d3;
+        }
+        input#unidades{
+            border-radius: 4px;
+            border: solid 2px #d3d3d3;
         }
 
         
+.otros-datos{
+    display:flex;
+    flex-direction: column;
+    margin-top:15px;
+    color:#383D3D;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+}
+    .cupon{
+        margin-bottom:15px;
+        
+    }
+    .boton-aplicar-cupon button, .realizar-compra{
+        border:none;
+        width: 100%;
+        height: 33px;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        color: white;
+        background-color: #12784A;
+        
+    }
+   
+   h4#selecEn{
+        margin-bottom: 5px;
+    }
+    .seleccionar-envío form{
+        margin-bottom:15px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+        .seleccionar-envío form input{
+            margin-right: 3px;
+            margin-bottom: 12px;
+        }
+        .codigoPostal{
+            color:#383D3D;
+            font-weight: 600;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        input#codigopostal, input#cupon{
+            width: 70%;
+            border: none;
+            border-radius: 3px;
+            background-color: white;
+            margin-right: 2px;
+            height: 25px;
+            margin-top: 5px;
+        }
+
+        .total input{
+            width: 50%;
+            border: none;
+            border-radius: 3px;
+            background-color: white;
+            height: 20px;
+        }
 
         
 

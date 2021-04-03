@@ -47,12 +47,13 @@
 <main class="carrito-main">
     <section class="contenedor-producto-agregado">
         <div class="mini-banner">
-            <p>Reloj "Tokio" ha sido añadido a tu carrito con éxito</p>
-           <a href="/">
-            <button class="but-seguir-comprando">Seguir comprando</button>
+            <p>"Reloj Tokio" ha sido añadido a tu carrito con éxito.</p>
+        </div>
+        <div class="seguir-comprando">
+        <a href="/" id="enlaceCompra">
+            <p class="seguirC">Seguir comprando<i class="fas fa-store"></i></p>
         </a>
         </div>
-
         <article class="contenedor-producto-cantidad">
             <img src="/images/Reloj2.jpg">
                 
@@ -76,25 +77,27 @@
         
     </section>
     <section class="otros-datos">
-        <article class="cupón">
-            <div>
-                <h4>¿Tienes un cupón de descuento?</h4>
-                <input required type="text" placeholder="Código del cupón" name="cupón" id="cupón">
+        <h4>¿Tienes un cupón de descuento?</h4>
+        <article class="cupon">
+            <div>                
+                <input type="text" placeholder="Código del cupón" name="cupon" id="cupon">
             </div>
             <div class="boton-aplicar-cupon">
                 <button type="submit">Aplicar cupón</button>
             </div>
         </article>
+        
+        <h4 id="selecEn">Seleccionar envío</h4>
         <article class="seleccionar-envío">
-            <h4>Seleccionar envío</h4>
+           
             <form>
-                <label for="envío">Retiro por sucursal</label>
-                    <input type="radio" name="tipo-envío">
-                    <label for="envío">Envío a correo</label>
-                    <input type="radio" name="tipo-envío">
-                    <label for="envío">Envío a domicilio</label>
-                    <input type="radio" name="tipo-envío">
-                    <input type="código-postal" placeholder="Código postal">
+
+                    <label for="envío"><input type="radio" name="tipo-envío">Retiro por sucursal</label>
+                    <label for="envío"><input type="radio" name="tipo-envío">Envío por Correo Argentino</label>
+                    <label for="envío"> <input type="radio" name="tipo-envío">Envío a domicilio por OCASA</label>
+                   
+                    <label for="codigopostal" class="codigoPostal">Código Postal</label>
+                    <input type="text" id="codigopostal" placeholder="código postal" maxlength="5" required="required">
             </form>
         </article>
         <article class="finalizar-compra">

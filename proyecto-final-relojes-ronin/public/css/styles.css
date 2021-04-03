@@ -124,7 +124,6 @@ footer {
         align-self: auto;
         flex-direction:column;
         align-items: flex-start;
-
     }
     
     .FAQ{
@@ -306,7 +305,7 @@ footer {
         }
                
 
-
+    
 
 
     .productosR{
@@ -323,6 +322,7 @@ footer {
             .articulosR img{
                 width: 100%;                
             }
+
             
             .detallesProductosR{
                 display: flex;
@@ -357,6 +357,23 @@ footer {
                     text-align: right;
                     /*border: #A17C46 2px solid;
  */                 width: 100%;
+                }
+
+                .verP{
+                   text-decoration: none;
+                   color:#383D3D;
+                   text-align: right; 
+                   width: 100%;
+                   margin-top: 5px; 
+                   font-size: 20px;  
+                                  
+                }
+                .verP i{
+                    margin-right:10px;
+                }
+
+                .verP .detalleOjo{
+                    display:none;
                 }
     
 
@@ -947,6 +964,30 @@ img {vertical-align: middle;}
                     font-size: 14px;
                     width: 100%;
                 }/*border: #A17C46 2px solid;*/   
+
+                .verP i{
+                    margin-right: 30px;
+                    margin-bottom: 2px;
+                    
+                }
+                .verP{
+                    transition: all 420ms;
+                    font-size: 16px;
+                }
+                    .verP:hover{
+                        color:#12784A;
+                    }
+                .verP p{
+                    display: block !important;
+                    transition: all 450ms;
+                    opacity: 0;
+                }
+                .verP p:hover{
+                    opacity:5;
+                    
+                }
+               
+              
     
 
 /*------------INICIO DEL <MAIN> DE DETALLE DE PRODUCTO------*/

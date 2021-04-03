@@ -537,7 +537,6 @@ section.producto-detalle div {
     justify-content: space-between;
 }
 
-
 section.producto-detalle {
     padding: 2%;
     margin: auto;
@@ -597,10 +596,19 @@ input#unidades {
 
 .descripción-artículo p {
     display: flex;
+    font-style: italic;
+}
+
+.descripción-artículo li {
+    margin-top: 8px;
 }
 
 .componentes-artículo p {
     display: block;
+}
+
+.contendor-descripciones {
+    padding-left: 25px;
 }
 
 article.descripción-producto button.add, article.descripción-producto button.favorite, article.descripción-producto button.share {

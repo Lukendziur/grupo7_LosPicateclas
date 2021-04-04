@@ -718,13 +718,16 @@ footer {
    flex-flow: column;
 }
 .datos-del-login-mas-especificos{
-border: solid 1px black;
-background-color: #c4c4c4;
+    border: solid 1px black;
+    border-radius: 5px ;
+    background-color:#f5f5f5;
+width: 100%;
 }
 .cajon-principal-del-login{
      margin: 20px 10px;
 }
 .datosDelLogin{
+    
 margin: 25px 0px;
 padding: 5px;
 width:100%;
@@ -742,10 +745,24 @@ font-size: 25px;
     
 }
 .boton-login-interno{
+    border-radius: 5px;
+    border: #12784A 2px solid;
 font-size: 30px;
 padding: 10px;
-background-color: #7DB9B3;
-color: black
+background-color: white;
+color: #12784A;
+transition: all 001ms;
+}
+.boton-login-interno:hover {
+    background-color:#12784A ;
+    color: white;
+    border: #12784A 2px solid;
+}
+.nombre-e-email-del-login{
+text-align: left;
+}
+.formulario-login{
+    width: 100%;
 }
 
 
@@ -759,6 +776,9 @@ color: black
     display: flex;
     text-align: center;
 }
+.form-del-register{
+    width: 100%;
+}
 .datos-del-register{
     padding: 15px;
     margin: 20px 0px;
@@ -769,16 +789,31 @@ color: black
     font-size: 19px;
 }
 .datos-del-register-especificos{
+    width: 100%;
     border: solid 1px black;
-background-color: #c4c4c4;
+    border-radius: 5px ;
+    background-color:#f5f5f5;
 }
 .boton-register-interno{
-    background-color: #7DB9B3;
-    color: black;
+    border-radius: 5px;
     padding: 10px;
     font-size: 30px;
+    border: #12784A 2px solid;
+    background-color: white;
+    color: #12784A;
+    transition: all 001ms;
 }
-
+ .boton-register-interno:hover  {
+    background-color:#12784A ;
+    color: white;
+    border: #12784A 2px solid;
+}
+.formulario-del-register{
+    width: 100%;
+}
+.label-del-register{
+    text-align: left;
+}
  /*-------------------------------------------------------------------------------------*/
 
 /*INICIO DEL <MAIN> DE LA PÁGINA DE DETALLE DEL PRODUCTO*/
@@ -1426,6 +1461,12 @@ section.otros-datos div.total {
 }
 
 
+/* INICIO DEL REGISTER*/
+.titulo-el-register{
+    font-size: 35px ;
+}
+
+
 }    
 @media(min-width: 1200px){
         
@@ -1535,9 +1576,7 @@ section.otros-datos div.total {
 .main-del-register{
     margin-top: 120px;
 }
-.titulo-el-register{
-    font-size: 30px ;
-}
+
 
 
 

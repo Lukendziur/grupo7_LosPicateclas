@@ -481,7 +481,9 @@ footer {
             color:#12784A;
         }
 
-        
+        section.otros-datos button {
+            max-width: 250px;
+        }
         
         
 
@@ -518,7 +520,7 @@ footer {
             
         }
         .subtotal input{
-            width: 30%;
+            width: 70px;
             border-radius: 4px;
             border: solid 2px #d3d3d3;
         }
@@ -542,17 +544,28 @@ footer {
         
     }
     .boton-aplicar-cupon button, .realizar-compra{
-        border:none;
-        width: 100%;
-        height: 33px;
-        text-align: center;
+        margin: auto;
+        display: flex;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        font-size: 1rem;
+        padding: 5px;
         border-radius: 5px;
-        margin-bottom: 3%;
-        margin-top: 3%;
-        color: white;
-        background-color: #12784A;
-        
+        width: 100%;
+        justify-content: center;
+        color: black;
+        background-color: white;
+        border: black 1px solid;
+        transition: all 450ms;
     }
+
+    .boton-aplicar-cupon button:hover, .realizar-compra:hover {
+        background-color: #12784A;
+        color: white;
+        border: #12784A 1px solid;
+    }
+
+
    
    h4#selecEn{
         margin-bottom: 5px;
@@ -581,6 +594,7 @@ footer {
             margin-right: 2px;
             height: 25px;
             margin-top: 5px;
+            padding: 5px;
         }
 
         .total input{
@@ -1281,6 +1295,76 @@ article.contenedor-fotos img:hover {
     z-index: 0;
 }
 
+/*------------------------MAIN CARRITO DE COMPRAS-----------------------*/
+
+.carrito-main {
+    margin-top: 102px;
+}
+
+article.contenedor-producto-cantidad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border: red 1px solid;
+}
+
+article.contenedor-producto-cantidad div.imagen-producto, div.nombre-productoC, div.cantidad-productoC, div.subtotal {
+    border: green 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.otros-datos h4 {
+    text-align: center;
+}
+
+input#codigopostal, input#cupon {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    height: 25px;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+section.otros-datos button {
+    align-items: center;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+
+article.seleccionar-envío {
+    align-items: center;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+label.codigoPostal {
+    margin: auto;
+    margin-top: 10px;
+}
+
+section.otros-datos div.total {
+    align-items: center;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.total input {
+    width: 85%;
+    max-width: 439px;
+}
+
 
 }    
 @media(min-width: 1200px){
@@ -1379,14 +1463,11 @@ article.contenedor-fotos img:hover {
     margin-top: 150px;
 }      
 
+/*--------MAIN DE CARRITO DE COMPRAS-----------*/
 
-
-
-
-
-
-
-
+.carrito-main {
+    margin-top: 150px;
+}
 
 
 /*media del register*/

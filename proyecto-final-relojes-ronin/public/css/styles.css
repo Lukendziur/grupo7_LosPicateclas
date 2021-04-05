@@ -483,52 +483,34 @@ footer {
         }
 
                
-        .contenedorProducto-cantidad{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+        table{
+            background-color:white;
+            border-radius: 5px;
+            color:gray;
+            width:100%;
+            height: 200px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+           
         }
-
-    .contenedor-producto-cantidad{
-        display: flex;
-        width: 100%;
-       /* border: blue solid 2px;*/
-        flex-direction: row;
+        table img{
+            width: 100px;
+        }
+        .imagen{
+            text-align: center;
+        }
         
+        td{
+            text-align: center;
+            font-size: 19px;   
+           
+        }
         
-    }  
-        .contenedor-producto-cantidad label{
-            color:#383D3D;
-            font-weight: 600;
+        th{
+            font-size: 22px;
         }
-        .contenedor-producto-cantidad img{
-            width: 150px;
-            
-            /*border: violet 2px solid;*/
-        }         
         
-        .nombre-productoC{
-         /*   border: yellow solid 2px;*/
-            margin-bottom: 10px;            
-        }
-            .nombre-productoC h4{
-                color:#383D3D;
-            }
-        
-
-        .subtotal{
-            margin-top: 10px;
-            
-        }
-        .subtotal input{
-            width: 30%;
-            border-radius: 4px;
-            border: solid 2px #d3d3d3;
-        }
-        input#unidades{
-            border-radius: 4px;
-            border: solid 2px #d3d3d3;
-        }
+  
 
         
 .otros-datos{
@@ -1411,8 +1393,29 @@ article.contenedor-fotos img:hover {
     margin-top:110px;
 }
 
-.contenedorProducto-cantidad{
-    border:red 2px solid;
+table{
+    color:gray;
+    width:100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+   
+}
+table img{
+    width: 100px;
+}
+.imagen{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    font-size: 19px;   
+   
+}
+
+th{
+    font-size: 22px;
 }
 
 

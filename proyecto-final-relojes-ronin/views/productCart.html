@@ -44,39 +44,64 @@
         </section>
 
     </header>
+
+
 <main class="carrito-main">
-    <section class="contenedor-producto-agregado">
-        <div class="mini-banner">
-            <p>"Reloj Tokio" ha sido añadido a tu carrito con éxito.</p>
-        </div>
-        <div class="seguir-comprando">
-        <a href="/" id="enlaceCompra">
-            <p class="seguirC">Seguir comprando<i class="fas fa-store"></i></p>
-        </a>
-        </div>
-        <article class="contenedor-producto-cantidad">
-            <div class="imagen-producto">
-            <img src="/images/Reloj2.jpg">
-            </div>  
-        <div class="contenedorProducto-cantidad">            
-            <div class="nombre-productoC">
-                <h4>Producto: </h4>
-            </div>
-            <div class="cantidad-productoC">
-                <label for="cantidad-productoC">Cantidad:</label>
-                <input type="number" name="unidades" id="unidades">
-            </div>
+   
+    <div class="mini-banner">
+        <p>"Reloj Tokio" ha sido añadido a tu carrito con éxito.</p>
+    </div>
+    <div class="seguir-comprando">
+    <a href="/" id="enlaceCompra">
+        <p class="seguirC">Seguir comprando<i class="fas fa-store"></i></p>
+    </a>
+    </div>
 
-            <div class="subtotal">
-                <label class="titulo-subtotal">Subtotal</label>
-                <input type="text" name="subtotal" placeholder="$22.000">
-            </div>
-        </div>            
-        </article>
-
-
+    <table>
         
-    </section>
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Unidades</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="imagen"><img src="/images/Reloj1.jpg"></td>
+            <td>Reloj Kamakura</td>
+            <td>1</td>
+            <td>$38.000</td>
+          </tr>
+          <tr>
+            <td class="imagen"><img src="/images/Reloj2.jpg"></td>
+            <td>Reloj Tokio</td>
+            <td>1</td>
+            <td>$22.000</td>
+          </tr>
+          <tr>
+            <td class="imagen"><img src="/images/Reloj3.jpg"></td>
+            <td>Reloj Nogaya</td>
+            <td>1</td>
+            <td>$54.000</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            
+            <th>  </th>
+            <th>Subtotal: </th>
+            <th> [Sumita de todo]</th>
+          </tr>
+        </tfoot>
+      </table>
+    
+
+
+
+
+
     <section class="otros-datos">
         <h4>¿Tienes un cupón de descuento?</h4>
         <article class="cupon">

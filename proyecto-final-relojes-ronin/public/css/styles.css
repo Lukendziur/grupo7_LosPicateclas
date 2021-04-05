@@ -417,9 +417,10 @@ footer {
 /*-----------INICIO DEL <MAIN> DE LA PÁGINA FAQ---------------*/ 
 
 .FAQ-main{
-    padding: 0px 15px;
+    padding: 15px 25px;
     font-size: 14px;
     color: #383D3D;
+    margin-top: 70px;
 }
 .FAQ-main h2{
     font-weight: 700;
@@ -649,30 +650,50 @@ footer {
 
  /*-------------------------------------------------------------------------------------*/
 
-/*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE LOGIN*/
+/*INICIO DEL <MAIN> DE LA PÁGINA DE LOGIN*/
 .mainDelLogin{
     text-align: center;
     align-items: center;
     display: flex;
-    margin-top: 80px;
-  
-   flex-flow: column;
+    margin-top: 100px;
+    flex-flow: column;
 }
-.datos-del-login-mas-especificos{
-    border: solid 1px black;
+.mainDelLogin h1{
+    color:#383D3D;
+    font-size: 32px;
+}
+
+.mainDelLogin label{
+    color:#383D3D;   
+    font-size: 18px;
+
+}
+
+.datosDelLogin label{
+    color:#383D3D;
+    font-size: 18px;
+}
+
+.datosDelLogin a{
+    font-size: 18px;
+    color:#383D3D;
+}
+
+.datos-del-login-mas-especificos, .datos-del-register-especificos{
+    border:none;
     border-radius: 5px ;
     background-color:#f5f5f5;
-width: 100%;
+    width: 100%;
+    height: 40px;
 }
 .cajon-principal-del-login{
      margin: 20px 10px;
 }
-.datosDelLogin{
-    
-margin: 25px 0px;
-padding: 5px;
-width:100%;
-font-size: 25px;
+.datosDelLogin{    
+    margin: 25px 0px;
+    padding: 5px;
+    width:100%;
+    font-size: 25px;
 }
 .caraDelLogin{
     font-size: 15px;
@@ -687,17 +708,17 @@ font-size: 25px;
 }
 .boton-login-interno{
     border-radius: 5px;
-    border: #12784A 2px solid;
-font-size: 30px;
-padding: 10px;
-background-color: white;
-color: #12784A;
-transition: all 001ms;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #12784A;
+    color: white;
+    width: 100%;
+    transition: all 420ms;
 }
 .boton-login-interno:hover {
-    background-color:#12784A ;
-    color: white;
-    border: #12784A 2px solid;
+    background-color:#14583a;
+
 }
 .nombre-e-email-del-login{
 text-align: left;
@@ -709,13 +730,21 @@ text-align: left;
 
  /*-------------------------------------------------------------------------------------*/
 
-/*INICIO DEL <MAIN> DE LA PÁGINA CARRITO DE REGISTER*/
+/*INICIO DEL <MAIN> DE LA PÁGINA REGISTER*/
 .main-del-register{
     margin-top: 100px;
     align-items: center;
     flex-flow: column;
     display: flex;
     text-align: center;
+    
+}
+.main-del-register h1{
+    color:#383D3D;
+}
+.main-del-register label{
+    color:#383D3D;
+    font-size: 18px;
 }
 .form-del-register{
     width: 100%;
@@ -726,28 +755,25 @@ text-align: left;
     font-size: 25px;
     width: 100%;
 }
-.titulo-el-register{
-    font-size: 19px;
+.datos-del-register a{
+    color:#383D3D;
+    font-size: 18px;
 }
-.datos-del-register-especificos{
-    width: 100%;
-    border: solid 1px black;
-    border-radius: 5px ;
-    background-color:#f5f5f5;
-}
+
+
 .boton-register-interno{
     border-radius: 5px;
     padding: 10px;
-    font-size: 30px;
-    border: #12784A 2px solid;
-    background-color: white;
-    color: #12784A;
-    transition: all 001ms;
-}
- .boton-register-interno:hover  {
+    font-size: 20px;
+    border:none;
     background-color:#12784A ;
-    color: white;
-    border: #12784A 2px solid;
+    color:white ;
+    transition: all 420ms;
+    width: 100%;
+}
+ .boton-register-interno:hover{
+    background-color:#14583a;
+    
 }
 .formulario-del-register{
     width: 100%;
@@ -1145,8 +1171,7 @@ img {vertical-align: middle;}
 
 .FAQ-main{
     max-width: 70%;
-    margin-top: 170px;
-
+    margin-top: 90px;
 }       
     .FAQ-main h1{
         font-size: 35px;
@@ -1323,6 +1348,21 @@ article.contenedor-fotos img:hover {
 
 /*------------------------MAIN CARRITO DE COMPRAS-----------------------*/
 
+.carrito-main{
+    margin-top:110px;
+}
+
+.contenedorProducto-cantidad{
+    border:red 2px solid;
+}
+
+
+
+
+
+
+
+
 
 
 /* INICIO DEL REGISTER*/
@@ -1438,14 +1478,19 @@ article.contenedor-fotos img:hover {
 /*media del register*/
 
 .main-del-register{
-    margin-top: 120px;
+    margin-top: 150px;
 }
 
 
+/*--------MAIN DEL LOGIN---------*/
+.mainDelLogin{
+    margin-top: 150px;
+}
 
+/*---------INICIO DEL MAIN DE FAQ-----------------*/
+.FAQ-main{
+   margin-top: 150px;
 
-
-
-
-    }    
+} 
+}     
     

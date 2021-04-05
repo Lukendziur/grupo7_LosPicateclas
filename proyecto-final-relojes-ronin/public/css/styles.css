@@ -667,12 +667,13 @@ footer {
 .mainDelLogin label{
     color:#383D3D;   
     font-size: 18px;
-
+    text-align: left
 }
 
 .datosDelLogin label{
     color:#383D3D;
     font-size: 18px;
+    text-align: left
 }
 
 .datosDelLogin a{
@@ -689,6 +690,20 @@ footer {
 }
 .cajon-principal-del-login{
      margin: 20px 10px;
+}
+.dato-email-login{
+    margin: 25px 0px;
+    padding: 5px;
+    width:100%;
+    font-size: 25px;
+    text-align: left;
+}
+.dato-contraseña-login{
+    margin: 25px 0px;
+    padding: 5px;
+    width:100%;
+    font-size: 25px;
+    text-align: left;
 }
 .datosDelLogin{    
     margin: 25px 0px;
@@ -726,8 +741,9 @@ footer {
     font-size: 18px;
     width: 100%;
 }
-.nombre-e-email-del-login{
-text-align: left;
+.seccion-del-login{
+width: 50%;
+max-width: 600px;
 }
 
 
@@ -741,6 +757,7 @@ text-align: left;
     flex-flow: column;
     display: flex;
     text-align: center;
+  
     
 }
 .main-del-register h1{
@@ -751,12 +768,7 @@ text-align: left;
     font-size: 18px;
 }
 
-.datos-del-register{
-    padding: 15px;
-    margin: 20px 0px;
-    font-size: 25px;
-    width: 100%;
-}
+
 .datos-del-register a{
     color:#383D3D;
     font-size: 18px;
@@ -784,10 +796,53 @@ text-align: left;
     font-size: 18px;
     width: 100%;
 }
-
-.label-del-register{
-    text-align: left;
+.dato-nombre{
+    padding: 15px;
+    margin: 20px 0px;
+    font-size: 25px;
+    width: 100%;
+   text-align: left; 
 }
+.dato-apellido{
+    padding: 15px;
+    margin: 20px 0px;
+    font-size: 25px;
+    width: 100%;
+   text-align: left; 
+}
+.dato-email{
+    padding: 15px;
+    margin: 20px 0px;
+    font-size: 25px;
+    width: 100%;
+   text-align: left; 
+}
+.dato-su-numero{
+    padding: 15px;
+    margin: 20px 0px;
+    font-size: 25px;
+    width: 100%;
+   text-align: left;  
+}
+.dato-su-contraseña{
+    padding: 15px;
+    margin: 20px 0px;
+    font-size: 25px;
+    width: 100%;
+   text-align: left;
+}
+.dato-confirmacion-de-contraseña{
+    padding: 15px;
+    margin: 20px 0px;
+    font-size: 25px;
+    width: 100%;
+   text-align: left;
+}
+.secsion-del-register{
+    width: 50%;
+max-width: 600px;
+}
+
  /*-------------------------------------------------------------------------------------*/
 
 /*INICIO DEL <MAIN> DE LA PÁGINA DE DETALLE DEL PRODUCTO*/

@@ -661,6 +661,7 @@ footer {
 .mainDelLogin h1{
     color:#383D3D;
     font-size: 32px;
+
 }
 
 .mainDelLogin label{
@@ -695,12 +696,10 @@ footer {
     width:100%;
     font-size: 25px;
 }
-.caraDelLogin{
-    font-size: 15px;
-    flex-flow: row;
-    position: relative;
 
-}
+  
+
+
 .boton-del-login{
     
     font-size: 30px;
@@ -720,12 +719,17 @@ footer {
     background-color:#14583a;
 
 }
+.enlace-del-login{
+    padding: 15px;
+    margin: 20px 0px;
+    color:#383D3D;
+    font-size: 18px;
+    width: 100%;
+}
 .nombre-e-email-del-login{
 text-align: left;
 }
-.formulario-login{
-    width: 100%;
-}
+
 
 
  /*-------------------------------------------------------------------------------------*/
@@ -746,9 +750,7 @@ text-align: left;
     color:#383D3D;
     font-size: 18px;
 }
-.form-del-register{
-    width: 100%;
-}
+
 .datos-del-register{
     padding: 15px;
     margin: 20px 0px;
@@ -775,9 +777,14 @@ text-align: left;
     background-color:#14583a;
     
 }
-.formulario-del-register{
+.enlace-del-register{
+    padding: 15px;
+    margin: 20px 0px;
+    color:#383D3D;
+    font-size: 18px;
     width: 100%;
 }
+
 .label-del-register{
     text-align: left;
 }

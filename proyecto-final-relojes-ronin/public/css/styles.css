@@ -592,6 +592,7 @@ footer {
 
 
 .contenedor-billing {
+    margin-top: 130px;
     border: red solid 1px;
     
 }
@@ -602,9 +603,11 @@ footer {
 }
 
 .control-formulario {
-    margin: 15px;
+    margin: 30px;
     display: block;
     text-align: center;
+    border: green 1px solid;
+    padding: 10px;
     
 }
 

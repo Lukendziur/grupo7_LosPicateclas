@@ -46,12 +46,10 @@
     
     </header>
 <main class="billing">
-
-<h1>PAYMENT</h1>
 <section class="contenedor-billing">
     <form action="/billing" method="POST" class="form-billing">
         <div class="control-formulario">
-            <h2>Método de pago preferido:</h2>
+            <h2>Ingresá los datos de tu tarjeta:</h2>
             <label for="payment-type"></label>
             <label for="Efectivo"> 
                 <input type="radio" name="payment-type" value="Efectivo" id="Efectivo" required> Efectivo </label>
@@ -60,9 +58,7 @@
             <label for="Crédito">
                 <input type="radio" name="payment-type" value="Crédito" id="Crédito" required> Crédito</label>    
         </div>
-
         <div class="control-formulario">
-            <h2>Ingresá los datos de tu tarjeta:</h2>
             <label for="card-number">Número de la tarjeta* :</label>
                 <label><input type="number" name="card-number" id="card-number" placeholder="Ej. 12345-6789" required></label>
         </div>
@@ -82,16 +78,41 @@
                     <option value="12">12</option>
                 </select>
         </div>
-        <div>
-            <h2 class="control-formulario">Pago en efectivo:</h2>
-
+        <div class="control-formulario">
+            <label for="Pago con dinero en efectivo">
+                <input type="radio" name="efectivo-option" value="Pago con dinero en efectivo" id="Pago con dinero en efectivo" required>
+                    Pago con dinero en efectivo
+            </label>
+            <label for="Western Union">
+                <input type="radio" name="efectivo-option" value="Western Union" id="Western Union" required>
+                    Western Union
+            </label>
+            <label for="Pay Pal">
+                <input type="radio" name="efectivo-option" value="Pay Pal" id="Pay Pal" required>
+                    Pay Pal
+            </label>
+            <label for="Mercado Pago">
+                <input type="radio" name="efectivo-option" value="Mercado Pago" id="Mercado Pago" required>
+                    Mercado Pago
+            </label>
         </div>
-            
-    <button type="submit" class="button-billing">Realizar pago</button>
+        <div class="control-formulario">
+            <label for="terminos">
+                <input type="checkbox" name="terminos">
+                He leído y acepto los términos y condiciones
+            </label>
+            <br>
+            <br>
+            <label for="newsletter"> 
+                <input type="checkbox" name="newsletter">
+                ¡Quiero recibir promociones y descuentos!
+            </label>      
+            <br>
+            <br>
+        <button type="submit" class="button-billing">Realizar pago</button>
     </form>
-</section>
+</section>    
 </main>
-
 <footer>
 
     <section class="section1">

@@ -50,29 +50,29 @@
 <section class="contenedor-billing">
     <form action="/billing" method="POST" class="form-billing">
         <div class="control-formulario">
-            <h2>Ingresá los datos de tu tarjeta:</h2>
-            <label for="payment-type"></label>
-            <label for="Efectivo"> 
-                <input type="radio" name="payment-type" value="Efectivo" id="Efectivo" required> Efectivo </label>
-            <label for="Débito">
-                <input type="radio" name="payment-type" value="Débito" id="Débito" required checked> Débito </label>
-            <label for="Crédito">
-                <input type="radio" name="payment-type" value="Crédito" id="Crédito" required> Crédito</label>    
+            <h2>Seleccione un método de pago:</h2>
+            <label for="payment-type"></label> 
+                <select name="payment-type"> 
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                    <option value="Tarjeta débito">Tarjeta débito</option> 
+                    <option value="Mercado Pago">Mercado Pago</option> 
+                </select> 
         </div>
         <div class="control-formulario">
             <label for="card-number">Número de la tarjeta* :</label>
-                <label><input type="number" name="card-number" id="card-number" placeholder="Ej. 12345-6789" required></label>
+                <label><input type="text" name="card-number" id="card-number" placeholder="Ej. 12345-6789" class="control" required ></label>
         </div>
         <div class="control-formulario">
             <label for="card-date">Fecha de vencimiento* :</label>
-                <label><input type="number" name="card-date" id="card-date" placeholder="mm/aa" required></label>
+                <label><input type="text" name="card-date" id="card-date" placeholder="mm/aa" required class="control"></label>
         </div>
         <div class="control-formulario">
             <label for="card-pass">Código de seguridad* :</label>
                 <label><input type="password" name="card-pass" id="card-pass" required></label>
         </div>
         <div class="control-formulario">
-            <label for="cuotas">Número de cuotas* :</label>
+            <label for="cuotas">Número de cuotas*:</label>
                 <select name="cuotas">
                     <option value="3">3</option>
                     <option value="6">6</option>
@@ -90,7 +90,7 @@
             </label>
             <label for="Pay Pal">
                 <input type="radio" name="efectivo-option" value="Pay Pal" id="Pay Pal" required>
-                    Pay Pal
+                    <i class="fab fa-paypal"></i>
             </label>
             <label for="Mercado Pago">
                 <input type="radio" name="efectivo-option" value="Mercado Pago" id="Mercado Pago" required>
@@ -113,6 +113,59 @@
         <button type="submit" class="button-billing">Realizar pago</button>
     </form>
 </section>    
+
+<section class="contenedor-datos">
+    <form action="" method="POST">
+        <div class="formulario-de-facturacion">
+            <div>
+              <label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre" required>
+              <label for="apellido">Apellido</label><input type="text" name="apellido" id="apellido" required>
+            </div>
+    
+        <article class="datos-de-factutracion">
+            
+            <label for="direccion">Direccion</label>
+            
+            <input type="text" name="direccion" id="direccion" required>
+           
+                <label for="localidad">Localidad</label>
+            
+            <input type="text" name="localidad" id="localidad" required>
+        </article>
+        <article class="datos-de-factutracion">
+            
+                <label for="provincia">Provincia</label>
+            
+            <input type="text" name="provincia" id="provincia" required>
+    
+            
+                <label for="codigo postal">Codigo postal</label>
+            
+            <input type="text" name="codigo postal" id="codigo postal">
+    
+        </article>
+        <article class="datos-de-factutracion">
+            
+                <label for="telefono">Telefono</label>
+            
+            <input type="tel" name="numero de telefono" id="telefono">
+    
+            
+                <label for="email">Email</label>
+           
+            <input type="email" name="email" id="email">
+    
+        </article>
+        <article class="datos-de-factutracion">
+            
+            <label for="dni">DNI</label>
+        
+        <input type="number" name="dni" id="dni">
+        </article>
+    
+    </article>
+    </form>
+</section>
 </main>
 <footer>
 

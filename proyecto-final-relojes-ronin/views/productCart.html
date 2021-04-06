@@ -15,12 +15,13 @@
 </head>
 
 <body>
+    
     <header>
         <section class="topMenu">
             <img src="/images/Logo-Ronin.png" alt="Logo Ronin">
-
+    
             <div class="contenedorIconos">
-
+    
                 <div class="ContenedorBuscador">
                     <form class="buscador" action="action_page.php">
                         <input type="text" placeholder="Buscar" name="search">
@@ -37,13 +38,14 @@
                 <ul>
                     <li><a href="/">Inicio</a></li>
                     <li><a href="#">Colecciones</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#ancla-1">Contacto</a></li>
                     <li><a href="/FAQ">Preguntas frecuentes</a></li>
                 </ul>
             </nav>
         </section>
-
+    
     </header>
+    
 
 
 <main class="carrito-main">
@@ -61,7 +63,7 @@
         
         <thead>
           <tr>
-            <th>Imagen</th>
+            <th> </th>
             <th>Producto</th>
             <th>Unidades</th>
             <th>Precio</th>
@@ -71,25 +73,26 @@
           <tr>
             <td class="imagen"><img src="/images/Reloj1.jpg"></td>
             <td>Reloj Kamakura</td>
-            <td>1</td>
+            <td><input type="number" name="unidades" id="unidades" max="10" min="0"></td>
             <td>$38.000</td>
           </tr>
           <tr>
             <td class="imagen"><img src="/images/Reloj2.jpg"></td>
             <td>Reloj Tokio</td>
-            <td>1</td>
+            <td><input type="number" name="unidades" id="unidades" max="10" min="0"></td>
             <td>$22.000</td>
           </tr>
           <tr>
             <td class="imagen"><img src="/images/Reloj3.jpg"></td>
             <td>Reloj Nogaya</td>
-            <td>1</td>
+            <td><input type="number" name="unidades" id="unidades" max="10" min="0"></td>
             <td>$54.000</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
             
+            <th>  </th>
             <th>  </th>
             <th>Subtotal: </th>
             <th> [Sumita de todo]</th>
@@ -123,8 +126,8 @@
                     <label for="envío"> <input type="radio" name="tipo-envío">Envío a domicilio por OCASA</label>
                    
                     <label for="codigopostal" class="codigoPostal">Código Postal</label>
-                    <input type="text" id="codigopostal" placeholder="código postal" maxlength="5" required="required">
-            </form>
+                    <div>
+                    <input type="text" id="codigopostal" placeholder="Código postal" maxlength="5" required="required"></div>           </form>
         </article>
         <article class="finalizar-compra">
             <div class="total">
@@ -142,54 +145,55 @@
 </main>
 
 
-    <footer>
+<footer>
 
-        <section class="section1">
+    <section class="section1">
 
-            <div class="FAQ">
-                <h2>Atención al cliente</h2>
-                <ul>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Envíos y retiros</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                    <li><a href="#">Cambios y devoluciones</a></li>
-                </ul>
-            </div>
-            <div class="contacto">
-                <h2>Contacto</h2>
-                <div class="mail">
-                    <p>inforonin@gmail.com</p>
-                    <br>
-                    <p>011-345081915</p>
-                </div>
-                <div class="iconosSociales">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-            </div>
-            <div class="mediosDePago">
-                <h2>Medios de pago</h2>
-                <div class="ahora12">
-                    <p>Ahora 12 y Ahora 18</p>
-                </div>
-                <div class="iconosPago">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-paypal"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-amex"></i>
-                </div>
-            </div>
-        </section>
+        <div class="FAQ">
+        <h2>Atención al cliente</h2>
+        <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Envíos y retiros</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Cambios y devoluciones</a></li>
+        </ul>
+    </div>
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <a name="ancla-1"></a>
+        <div class="mail">
+            <p>inforonin@gmail.com</p>
+            <br>
+            <p>011-345081915</p>
+        </div>
+        <div class="iconosSociales">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+    </div>
+    <div class="mediosDePago">
+        <h2>Medios de pago</h2>
+        <div class="ahora12">
+            <p>Ahora 12 y Ahora 18</p>
+        </div>
+    <div class="iconosPago">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-paypal"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-amex"></i>
+    </div>
+    </div>
+</section>    
 
-        <section class="section2">
-            <div class="derechosR">
-                <p>© 2021 R o n i n</p>
-            </div>
+<section class="section2"> 
+    <div class="derechosR">
+        <p>© 2021 R o n i n</p>
+    </div>
 
-        </section>
-    </footer>
+</section> 
+</footer>
 
 </body>
 

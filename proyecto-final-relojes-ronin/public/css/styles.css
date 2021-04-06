@@ -241,14 +241,14 @@ footer {
 }
 
 .masculine, .fem, .n-gender{
-    border: #12784A 2px solid;
+    border: none;
     width: 100%;
     height: 33px;
     text-align: center;
     border-radius: 5px;
     margin-bottom: 3%;
-    color: #12784A;
-    background-color: white;
+    color: white;
+    background-color: #12784A;
 }
     
    
@@ -485,7 +485,6 @@ footer {
                
         table{
             background-color:white;
-            border-radius: 5px;
             color:gray;
             width:100%;
             height: 200px;
@@ -495,6 +494,8 @@ footer {
         }
         table img{
             width: 100px;
+            margin-bottom: 15px;
+            margin-top: 15px;
         }
         .imagen{
             text-align: center;
@@ -502,12 +503,18 @@ footer {
         
         td{
             text-align: center;
-            font-size: 19px;   
+            font-size: 14px;  
+            border-bottom: lightgray solid 1px; 
            
         }
         
         th{
-            font-size: 22px;
+            font-size: 14px;
+        }
+        input#unidades{
+            border-radius: 5px;
+            border: solid 2px #d3d3d3;
+            cursor: pointer;
         }
         
   
@@ -536,8 +543,15 @@ footer {
         margin-top: 3%;
         color: white;
         background-color: #12784A;
+        cursor: pointer;
+        transition: all 420ms;
+
         
     }
+    .boton-aplicar-cupon button:hover, .realizar-compra:hover{
+        background-color:#14583a;   
+    }
+
 
     
    
@@ -966,15 +980,15 @@ article.descripción-producto button.add, article.descripción-producto button.f
     border-radius: 5px;
     width: 100%;
     justify-content: center;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #12784A;
     transition: all 450ms;
+    border:none;
 }
 
 article.descripción-producto button.add:hover, article.descripción-producto button.favorite:hover, article.descripción-producto button.share:hover {
-    background-color: #12784A;
-    border: #12784A solid 2px;
-    color: white;
+    background-color:#14583a;
+    
 }
 
 .productos-similares {
@@ -1267,12 +1281,14 @@ img {vertical-align: middle;}
         width: 33%;
         margin-left: 2%;
         margin-right: 2%;
+        cursor: pointer;
         transition: all 420ms;
     } 
-         .masculine:hover, .fem:hover, .n-gender:hover{
-             color: white;
-             background-color: #12784A;
-         }
+        .masculine:hover, .fem:hover, .n-gender:hover{
+           
+           background-color:#14583a;          
+                         
+        }
 
    
         .articulosR{
@@ -1396,13 +1412,15 @@ article.contenedor-fotos img:hover {
 table{
     color:gray;
     width:100%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px;
    
 }
 table img{
     width: 100px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 .imagen{
     text-align: center;
@@ -1410,18 +1428,51 @@ table img{
 
 td{
     text-align: center;
-    font-size: 19px;   
+    font-size: 19px;  
+    border-bottom: lightgray solid 1px; 
    
 }
+
+
 
 th{
     font-size: 22px;
 }
 
+.otros-datos{
+    max-width: 80%;
+    margin-left: 10%;
+    padding: 30px 0px 30px 0px;
+}
+.boton-aplicar-cupon button, .realizar-compra{
+    max-width: 50%
+}
+.boton-aplicar-cupon button{
+    margin-top:1%;
 
+}
 
+input#codigopostal, input#cupon{
+    max-width: 50%;
+}
+.codigoPostal{
+    margin-top:25px;
+}
 
+.total input {
+    max-width: 45.6%
+}
+.otros-datos h4, .cupon, .seleccionar-envío, .finalizar-compra{
+    text-align: center;
+}
 
+.otros-datos h4, .codigoPostal{
+    font-size: 20px;
+}
+
+.otros-datos h4{
+    margin-bottom: 10px;
+}
 
 
 

@@ -14,6 +14,9 @@ Gris fondo - #f5f5f5
 == Fuentes == 
 Open Sans - textos
 
+= agregar favicon =
+
+colocar dentro de head = <link rel="icon" href="/images/Ronin-logo-icon.ico">
 
 --Página: inicio--
 == Home del sitio con la oferta de productos y/o servicios.==

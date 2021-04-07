@@ -46,7 +46,16 @@
     
     </header>
     
-<main class="billing">
+<main>
+    <div class="buttons">
+    <div>
+        <button type="submit" class="button-login-billing">¿Ya eres cliente? Iniciá sesión</button>
+    </div>
+    <div>
+        <button type="submit" class="button-register-billing">Registrate</button>
+    </div>
+</div>
+<section class="contenedor-forms">
 <section class="contenedor-billing">
     <form action="/billing" method="POST" class="form-billing">
         <div class="control-formulario">
@@ -56,7 +65,9 @@
                     <option value="Efectivo">Efectivo</option>
                     <option value="Tarjeta de crédito">Tarjeta de crédito</option>
                     <option value="Tarjeta débito">Tarjeta débito</option> 
-                    <option value="Mercado Pago">Mercado Pago</option> 
+                    <option value="Mercado Pago">Mercado Pago</option>
+                    <option value="Pay Pal">Pay Pal</option>
+                    <option value="Western Union">Western Union</option>    
                 </select> 
         </div>
         <div class="control-formulario">
@@ -80,24 +91,6 @@
                 </select>
         </div>
         <div class="control-formulario">
-            <label for="Pago con dinero en efectivo">
-                <input type="radio" name="efectivo-option" value="Pago con dinero en efectivo" id="Pago con dinero en efectivo" required>
-                    Pago con dinero en efectivo
-            </label>
-            <label for="Western Union">
-                <input type="radio" name="efectivo-option" value="Western Union" id="Western Union" required>
-                    Western Union
-            </label>
-            <label for="Pay Pal">
-                <input type="radio" name="efectivo-option" value="Pay Pal" id="Pay Pal" required>
-                    <i class="fab fa-paypal"></i>
-            </label>
-            <label for="Mercado Pago">
-                <input type="radio" name="efectivo-option" value="Mercado Pago" id="Mercado Pago" required>
-                    Mercado Pago
-            </label>
-        </div>
-        <div class="control-formulario">
             <label for="terminos">
                 <input type="checkbox" name="terminos">
                 He leído y acepto los términos y condiciones
@@ -115,58 +108,48 @@
 </section>    
 
 <section class="contenedor-datos">
-    <form action="" method="POST">
-        <div class="formulario-de-facturacion">
-            <div>
-              <label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre" required>
-              <label for="apellido">Apellido</label><input type="text" name="apellido" id="apellido" required>
+        <form action="/" method="POST" class="create-form">
+            <div class="control-create-form">
+                <h2>Datos de facturación:</h2>
+                <label for="name"></label>
+                <input type="text" name="name" placeholder="Nombre*" class="control-form" required>
+                <label for="last-name"></label>
+                <input type="text" name="last-name" placeholder="Apellido*" class="control-form" required>
             </div>
-    
-        <article class="datos-de-factutracion">
-            
-            <label for="direccion">Direccion</label>
-            
-            <input type="text" name="direccion" id="direccion" required>
-           
-                <label for="localidad">Localidad</label>
-            
-            <input type="text" name="localidad" id="localidad" required>
-        </article>
-        <article class="datos-de-factutracion">
-            
-                <label for="provincia">Provincia</label>
-            
-            <input type="text" name="provincia" id="provincia" required>
-    
-            
-                <label for="codigo postal">Codigo postal</label>
-            
-            <input type="text" name="codigo postal" id="codigo postal">
-    
-        </article>
-        <article class="datos-de-factutracion">
-            
-                <label for="telefono">Telefono</label>
-            
-            <input type="tel" name="numero de telefono" id="telefono">
-    
-            
-                <label for="email">Email</label>
-           
-            <input type="email" name="email" id="email">
-    
-        </article>
-        <article class="datos-de-factutracion">
-            
-            <label for="dni">DNI</label>
-        
-        <input type="number" name="dni" id="dni">
-        </article>
-    
-    </article>
-    </form>
+            <div class="control-create-form">
+                <label for="address"></label>
+                <input type="text" name="address" id="address" placeholder="Dirección*" class="control-form">
+                <label for="location"></label>
+                <input type="text" name="location" id="location" placeholder="Localidad*" class="control-form">
+            </div>
+            <div class="control-create-form">
+                <label for="province"></label>
+                <input type="text" name="province" placeholder="Provincia*" class="control-form">
+                <label for="zip-code"></label>
+                <input type="text" name="zip-code" placeholder="Código postal*" class="control-form">
+            </div>
+            <div class="control-create-form">
+                <label for="telephone"></label>
+                <input type="tel" name="telephone" placeholder="Teléfono*" class="control-form">
+                <label for="e-mail"></label>
+                <input type="email" name="e-mail" placeholder="Correo electrónico*" class="control-form">
+            </div>
+            <div class="control-create-form">
+                <label for="dni"></label>
+                <input type="text" name="dni" placeholder="DNI*" class="control-form">
+            </div>
+            <div class="control-create-form">
+            <label for="newsletter"></label> 
+                <input type="checkbox" name="newsletter">¡Quiero recibir promociones y descuentos!
+            </div>
+                <button type="submit" value="submit" class="buttons-create-form">Enviar</button>
+                <button type="reset" value="Borrar" class="buttons-create-form">Borrar</button>
+            </div>
+        </div>
+        </form>
+     </section>
 </section>
-</main>
+    </main>
 <footer>
 
     <section class="section1">

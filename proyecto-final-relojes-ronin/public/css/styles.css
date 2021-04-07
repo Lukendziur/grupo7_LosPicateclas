@@ -607,11 +607,11 @@ footer {
 
 .contenedor-forms{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .buttons {
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     display: flex;
     flex-direction: row ;
     justify-content: space-evenly;
@@ -626,7 +626,7 @@ footer {
     background-color: #12784A;
     color: white;
     width: 100%;
-    transition: all 420ms;
+    transition: opacity 0.20s ease-in-out;
 }
 
 .button-register-billing {
@@ -640,8 +640,9 @@ footer {
     transition: all 420ms;
 }
 .contenedor-billing {
-    border: red solid 1px;
+    /*border: red solid 1px;*/
     margin: 15px 15px;
+    background-color:#f5f5f5;
 }
 
 .form-billing {
@@ -653,7 +654,7 @@ footer {
     margin: 10px;
     display: block;
     text-align: center;
-    border: green 1px solid;
+    /*border: green 1px solid;*/
     padding: 5px;
 }
     .control-formulario h2 {
@@ -679,9 +680,10 @@ footer {
     }
 
 .contenedor-datos {
-    border:blue solid 1px;
+    /*border:blue solid 1px;*/
     margin: 15px 15px;
     background-color:#f5f5f5;
+    display: none;
 }
     
 .create-form {
@@ -697,10 +699,17 @@ footer {
     margin: 10px;
     display: block;
     text-align: center;
-    border: green 1px solid;
+    /*border: green 1px solid;*/
     padding: 5px;
 }
 
+.control-form {
+    border-radius: 5px; 
+    border: none;
+    width: 180px;
+    padding: 7px;
+    margin: 10px
+}
 .button-billing {
     background-color: #12784A;
     border-radius: 15px;
@@ -721,13 +730,28 @@ footer {
     transition: opacity 0.20s ease-in-out;
 }
 
+.contenedor-buttons-create-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .button-billing:hover {
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .buttons-create-form:hover {
     opacity: 0.5;
+    cursor: pointer;
 }
+
+.button-login-billing:hover, .button-register-billing:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 
  /*-------------------------------------------------------------------------------------*/
 
@@ -1216,6 +1240,9 @@ img {vertical-align: middle;}
 
         
     }
+
+  
+
     
     @media(min-width: 768px){
     
@@ -1526,8 +1553,15 @@ input#codigopostal, input#cupon{
     font-size: 35px ;
 }
 
+/*MAIN DEL BILLING*/
+.contenedor-datos {
+    display: block;
+}
 
 }    
+
+
+
 @media(min-width: 1200px){
         
 /*---------HEADER DE LA PÁGINA HOME---------*/   

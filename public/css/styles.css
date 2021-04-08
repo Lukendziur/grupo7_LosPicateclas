@@ -222,13 +222,43 @@ footer {
 .main-index{
     padding: 10px;
 }
+video{
+    width: 100%;
+    margin-top: 150px;    
+}
+
+/*
 .bloque-carrusel{
-    background-color: lightseagreen;
     width: 100%;
     height: 300px;
-    margin-top: 150px;
-    background-image: url("/images/relojcarrusel.jpg");
+    margin-top: 180px;   
+    text-align: center;
+    position: relative;
+    z-index: 5;
 }
+.bloque-carrusel img{
+    max-width: 100%;
+    max-height: 300px;
+}
+.bloque-carrusel .fa-angle-left{
+    position: relative;
+    z-index: 3;
+    float: left;
+    border: red 2px solid;
+    left: 30px;
+    bottom: 120px;
+        
+} 
+    
+.bloque-carrusel .fa-angle-right{
+    position: relative;
+    z-index: 5;
+    float: right;
+    border: red 2px solid;
+    right: 30px;
+    bottom: 120px;
+
+} */
 
 .bloque-genderLineas{
     display: flex;
@@ -1332,6 +1362,16 @@ img {vertical-align: middle;}
 
 /*-----------INICIO DEL <MAIN> DE LA PÁGINA HOME---------------*/ 
 
+
+/*
+.bloque-carrusel .fa-angle-right{
+    position: absolute;
+
+}
+.bloque-carrusel .fa-angle-left{
+    position: absolute;
+
+}*/
 
 .bloque-filtros-productos{
     display: flex;

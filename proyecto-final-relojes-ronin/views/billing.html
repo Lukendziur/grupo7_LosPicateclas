@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="/images/Ronin-logo-icon.ico">
     <title>Facturación</title>
 </head>
 
@@ -47,65 +48,8 @@
     </header>
     
 <main>
-    <div class="buttons">
-    <div>
-        <a href="login"><button type="submit" class="button-login-billing">¿Ya eres cliente? Iniciá sesión</button></a>
-    </div>
-    <div>
-        <a href="registro"><button type="submit" class="button-register-billing">Registrate</button></a>
-    </div>
-</div>
+    
 <section class="contenedor-forms">
-<section class="contenedor-billing">
-    <form action="/billing" method="POST" class="form-billing">
-        <div class="control-formulario">
-            <h2>Seleccione un método de pago:</h2>
-            <label for="payment-type"></label> 
-                <select name="payment-type"> 
-                    <option value="Efectivo">Efectivo</option>
-                    <option value="Tarjeta de crédito">Tarjeta de crédito</option>
-                    <option value="Tarjeta débito">Tarjeta débito</option> 
-                    <option value="Mercado Pago">Mercado Pago</option>
-                    <option value="Pay Pal">Pay Pal</option>
-                    <option value="Western Union">Western Union</option>    
-                </select> 
-        </div>
-        <div class="control-formulario">
-            <label for="card-number">Número de la tarjeta* :</label>
-                <label><input type="text" name="card-number" id="card-number" placeholder="Ej. 12345-6789" class="control" required ></label>
-        </div>
-        <div class="control-formulario">
-            <label for="card-date">Fecha de vencimiento* :</label>
-                <label><input type="text" name="card-date" id="card-date" placeholder="mm/aa" required class="control"></label>
-        </div>
-        <div class="control-formulario">
-            <label for="card-pass">Código de seguridad* :</label>
-                <label><input type="password" name="card-pass" id="card-pass" required></label>
-        </div>
-        <div class="control-formulario">
-            <label for="cuotas">Número de cuotas*:</label>
-                <select name="cuotas">
-                    <option value="3">3</option>
-                    <option value="6">6</option>
-                    <option value="12">12</option>
-                </select>
-        </div>
-        <div class="control-formulario">
-            <label for="terminos">
-                <input type="checkbox" name="terminos">
-                He leído y acepto los términos y condiciones
-            </label>
-            <br>
-            <br>
-            <label for="newsletter"> 
-                <input type="checkbox" name="newsletter">
-                ¡Quiero recibir promociones y descuentos!
-            </label>      
-            <br>
-            <br>
-        <button type="submit" class="button-billing">Realizar pago</button>
-    </form>
-</section>    
 
 <section class="contenedor-datos">
         <form action="/" method="POST" class="create-form">
@@ -143,12 +87,63 @@
                 <input type="checkbox" name="newsletter">¡Quiero recibir promociones y descuentos!
             </div>
             <div class="contenedor-buttons-create-form">
-                <button type="submit" value="submit" class="buttons-create-form">Enviar</button>
+                <button type="submit" value="submit" class="buttons-create-form" id="bu">Guardar</button>
                 <button type="reset" value="Borrar" class="buttons-create-form">Borrar</button>
             </div>
         </div>
         </form>
      </section>
+     <section class="contenedor-billing">
+        <form action="/billing" method="POST" class="form-billing">
+            <div class="control-formulario">
+                <h2>Seleccione un método de pago:</h2>
+                <label for="payment-type"></label> 
+                    <select name="payment-type" class="paymentList"> 
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                        <option value="Tarjeta débito">Tarjeta débito</option> 
+                        <option value="Mercado Pago">Mercado Pago</option>
+                        <option value="Pay Pal">Pay Pal</option>
+                        <option value="Western Union">Western Union</option>    
+                    </select> 
+            </div>
+            <div class="control-formulario">
+                <label for="card-number">Número de la tarjeta* :</label>
+                    <label><input type="text" name="card-number" id="card-number" placeholder="Ej. 12345-6789" class="control" required ></label>
+            </div>
+            <div class="control-formulario">
+                <label for="card-date">Fecha de vencimiento* :</label>
+                    <label><input type="text" name="card-date" id="card-date" placeholder="mm/aa" required class="control"></label>
+            </div>
+            <div class="control-formulario">
+                <label for="card-pass">Código de seguridad* :</label>
+                    <label><input type="password" name="card-pass" id="card-pass" required></label>
+            </div>
+            <div class="control-formulario">
+                <label for="cuotas">Número de cuotas*:</label>
+                    <select name="cuotas" class="paymentList">
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                    </select>
+            </div>
+            <div class="control-formulario">
+                <label for="terminos">
+                    <input type="checkbox" name="terminos">
+                    He leído y acepto los términos y condiciones
+                </label>
+                <br>
+                <br>
+                <label for="newsletter"> 
+                    <input type="checkbox" name="newsletter">
+                    ¡Quiero recibir promociones y descuentos!
+                </label>      
+                <br>
+                <br>
+            <button type="submit" class="button-billing">Realizar pago</button>
+        </form>
+    </section>    
+    
 </section>
     </main>
 <footer>
@@ -158,10 +153,10 @@
         <div class="FAQ">
         <h2>Atención al cliente</h2>
         <ul>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Envíos y retiros</a></li>
-            <li><a href="#">Newsletter</a></li>
-            <li><a href="#">Cambios y devoluciones</a></li>
+            <li><a href="/FAQ">Preguntas frecuentes</a></li>
+            <li><a href="/FAQ">Envíos y retiros</a></li>
+            <li><a href="/FAQ">Newsletter</a></li>
+            <li><a href="/FAQ">Cambios y devoluciones</a></li>
         </ul>
     </div>
     <div class="contacto">

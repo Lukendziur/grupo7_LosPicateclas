@@ -250,6 +250,7 @@ footer {
     margin-bottom: 3%;
     color: white;
     background-color: #12784A;
+    cursor:pointer;
 }
     
    
@@ -334,7 +335,18 @@ footer {
             bottom: 1px;
             
         }
-               
+        .botFiltros button{
+            border: none;
+            width: 100%;
+            height: 33px;
+            text-align: center;
+            border-radius: 5px;
+            cursor:pointer;
+            margin-top: 15%;
+            color: white;
+            background-color: #12784A;
+            
+        }
 
     
 
@@ -607,7 +619,17 @@ footer {
 
 .contenedor-forms{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-top: 100px;
+    color: #383D3D;
+}
+input.control-form{
+    width: 100%;
+    height: 40px;
+}
+.contenedor-forms label{
+    font-size: 19px;
 }
 
 .buttons {
@@ -618,54 +640,42 @@ footer {
     margin-top: 150px;
 }
 
-.button-login-billing {
-    border-radius: 5px;
-    border: none;
-    font-size: 15px;
-    padding: 10px;
-    background-color: #12784A;
-    color: white;
-    width: 100%;
-    transition: opacity 0.20s ease-in-out;
-}
 
-.button-register-billing {
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    font-size: 15px;
-    padding: 10px;
-    background-color: #12784A;
-    color: white;
-    transition: all 420ms;
-}
 .contenedor-billing {
     /*border: red solid 1px;*/
     margin: 15px 15px;
     background-color:#f5f5f5;
+    border-radius: 5px;
+    max-height: 600px;
 }
 
 .form-billing {
     padding: 20px;
-    background-color:#f5f5f5
+    
+   
 }
 
 .control-formulario {
     margin: 10px;
     display: block;
-    text-align: center;
+    text-align: left;
     /*border: green 1px solid;*/
     padding: 5px;
 }
     .control-formulario h2 {
     margin-bottom: 20px;
     }
-
+    .paymentList{
+        border:none;
+        border-radius: 2px;
+    }
     .control-formulario .control {
         border-radius: 5px; 
         border: none;
         width: 150px;
         padding: 7px;
+        width: 100%;
+        height: 40px;
     }
     
    .control-formulario #card-pass {
@@ -683,11 +693,13 @@ footer {
     /*border:blue solid 1px;*/
     margin: 15px 15px;
     background-color:#f5f5f5;
-    display: none;
+    border-radius: 5px;
+    
 }
     
 .create-form {
     padding: 20px;
+    font-size: 19px;
     
 }
 
@@ -712,23 +724,38 @@ footer {
 }
 .button-billing {
     background-color: #12784A;
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     border: none;
-    padding: 20px;
-    transition: opacity 0.20s ease-in-out;
-    display: flex;
-    margin: auto;
+    transition: background-color 420ms;
+    cursor: pointer;
+    padding:10px;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
 }
+    .button-billing:hover {
+        background-color:#14583a;  
+    }
 
 .buttons-create-form {
     background-color: #12784A;
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     border: none;
-    padding: 20px;
-    transition: opacity 0.20s ease-in-out;
+    padding: 10px;
+    transition: background-color 420ms;
+    cursor: pointer;
+    width: 100%;
+    font-size: 19px;
 }
+    button#bu.buttons-create-form#bu{
+        margin-right: 10px;
+    }
+
+    .buttons-create-form:hover {
+        background-color:#14583a; 
+    }
 
 .contenedor-buttons-create-form {
     margin: 0 auto;
@@ -737,15 +764,6 @@ footer {
     justify-content: space-around;
 }
 
-.button-billing:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.buttons-create-form:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
 
 .button-login-billing:hover, .button-register-billing:hover {
     opacity: 0.5;
@@ -974,7 +992,7 @@ section.producto-detalle h4 {
 
 div.contenedor-productos-similares h4 {
     text-align: center;
-    background-color: lightgray;
+    background-color: #f5f5f5;
     border-radius: 5px;
     padding: 1rem;
 }
@@ -1032,9 +1050,9 @@ input#contador-cantidad-unidades {
 
 .contendor-descripciones {
     padding-left: 25px;
-    background-color: lightgray;
+    background-color: #f5f5f5;
     border-radius: 7px;
-    border: 7px solid lightgray;
+    border: 7px solid #f5f5f5;
 }
 
 article.descripción-producto button.add, article.descripción-producto button.favorite, article.descripción-producto button.share {
@@ -1051,6 +1069,7 @@ article.descripción-producto button.add, article.descripción-producto button.f
     background-color: #12784A;
     transition: all 450ms;
     border:none;
+    cursor:pointer;
 }
 
 article.descripción-producto button.add:hover, article.descripción-producto button.favorite:hover, article.descripción-producto button.share:hover {
@@ -1323,7 +1342,8 @@ img {vertical-align: middle;}
     .filtrosR {
         width: 20%;
         height: auto;
-        border-right: lightgray 2px solid;        
+        border-right: lightgray 2px solid; 
+        max-height: 620px;       
     }
         .marcaR, .colorR, .tipoR{
             display:block;
@@ -1554,8 +1574,10 @@ input#codigopostal, input#cupon{
 }
 
 /*MAIN DEL BILLING*/
-.contenedor-datos {
-    display: block;
+.contenedor-forms {
+    display: flex;
+    flex-direction: row;
+    margin-top: 110px;
 }
 
 }    
@@ -1652,35 +1674,10 @@ input#codigopostal, input#cupon{
            
 
            
-    /*-------MAIN DETALLE DE PRODUCTO----------*/
+    /*-------MAIN DETALLE DE PRODUCTO, CARRITO DE COMPRAS, REGISTER, BILLING, LOGIN Y FAQ----------*/
 
-.producto-detalle {
+.producto-detalle, .carrito-main, .main-del-register, .mainDelLogin, .FAQ-main, .contenedor-forms {
     margin-top: 150px;
-}      
-
-/*--------MAIN DE CARRITO DE COMPRAS-----------*/
-
-.carrito-main {
-    margin-top: 150px;
-}
-
-
-/*media del register*/
-
-.main-del-register{
-    margin-top: 150px;
-}
-
-
-/*--------MAIN DEL LOGIN---------*/
-.mainDelLogin{
-    margin-top: 150px;
-}
-
-/*---------INICIO DEL MAIN DE FAQ-----------------*/
-.FAQ-main{
-   margin-top: 150px;
-
 } 
-}     
-    
+
+}

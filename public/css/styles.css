@@ -112,7 +112,9 @@ footer {
     width: 100%;
     background-color: #212121;
     color: white;
-    padding: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 14px;            
 }
     footer i {
@@ -128,8 +130,8 @@ footer {
     }
     
     .FAQ{
-        margin-bottom: 10%;
-        margin-top: 10%;          
+        margin-bottom: 5%;
+        margin-top: 5%;          
     }            
         .FAQ h2{
             margin-bottom: 5%;
@@ -155,8 +157,8 @@ footer {
 
     .contacto{
         display: block;
-        margin-bottom: 10%;
-        margin-top: 10%; 
+        margin-bottom: 5%;
+        margin-top: 5%; 
     }
         .contacto h2{
             margin-bottom: 5%;
@@ -184,8 +186,8 @@ footer {
 
     .mediosDePago {
         display: block;
-        margin-bottom: 10%;
-        margin-top: 10%;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
         .mediosDePago h2{
             margin-bottom: 5%;
@@ -216,6 +218,33 @@ footer {
         }          
 
 /*------FIN DEL FOOTER DE LA PÁGINA HOME--------------------*/
+
+/*-----------SECCIÓN EN COMÚN--------------*/
+.bannerFinal{
+    display: flex;
+    flex-direction: column;
+    color:#383D3D;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.bannerFinal i{
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+
+.bannerFinal h2{
+     font-size: 16px;
+     font-weight: 700;
+}
+.bannerFinal p{
+    font-size: 14px;
+}
+.bannerFinalPartes{
+    
+    margin-top: 15px;
+    text-align: center;
+    line-height: initial;
+}
 
 
 /*-----------INICIO DEL <MAIN> DE LA PÁGINA HOME---------------*/ 
@@ -449,8 +478,26 @@ video{
                     display:none;
                 }
     
-
-
+    .botonMostrarTodo{
+        text-align: center;
+    }
+    .botonMostrarTodo button{
+        border:none;
+        width: 100%;
+        height: 33px;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 3%;
+        margin-top: 9%;
+        color: white;
+        background-color: #12784A;
+        cursor: pointer;
+        transition: all 420ms;
+        max-width: 305px;
+    }
+    .botonMostrarTodo button:hover{
+        background-color:#14583a; 
+    }
 
 
 
@@ -1341,6 +1388,39 @@ img {vertical-align: middle;}
             justify-content: space-between;
         }
 
+
+/*-----------SECCIÓN EN COMÚN--------------*/
+.bannerFinal{
+    display: flex;
+    flex-direction: row;   
+    width: 100%;
+    padding: 30px;
+    justify-content: space-around;
+    margin-top: auto;
+    
+}
+.titulo-p{    
+    padding: 10px;
+    text-align: left;
+    margin-left: 40px;
+}
+.bannerFinalPartes i{
+   float: left;
+   margin: 0px;
+   margin-top: 5%;
+}
+
+.bannerFinalPartes{
+    padding-left: 25px;
+}
+
+
+#bannerFinal1, #bannerFinal2{
+    border-left: 2px lightgray solid;
+}
+
+
+
  /*-----------INICIO DEL <MAIN> DE LA PÁGINA FAQ---------------*/ 
 
 .FAQ-main{
@@ -1383,7 +1463,7 @@ img {vertical-align: middle;}
         width: 20%;
         height: auto;
         border-right: lightgray 2px solid; 
-        max-height: 620px;       
+        max-height: 650px;       
     }
         .marcaR, .colorR, .tipoR{
             display:block;
@@ -1484,7 +1564,9 @@ img {vertical-align: middle;}
                     opacity:5;
                     
                 }
-               
+    
+    
+    
               
     
 
@@ -1697,6 +1779,7 @@ input#codigopostal, input#cupon{
             font-size: 24px;
             font-weight: 700;
             width: 100%;
+            line-height: normal;
            /* border: limegreen 2px solid;*/
         }
         .detallesProductosR .precioR{
